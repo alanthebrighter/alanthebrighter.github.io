@@ -1,0 +1,32 @@
+name: Jekyll Build and Deploy
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Set up Docker
+        uses: docker/setup-buildx-action@v2
+
+      - name: Build the Jekyll site using Docker
+        run: |
+          docker run --rm \
+            -v ${{ github.workspace }}:/srv/jekyll \
+            -v /usr/local/bundle \
+            -p 4000:4000 \
+            jekyll/builder:latest \
+            jekyll build
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: './_site'
