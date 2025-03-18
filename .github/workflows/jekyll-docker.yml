@@ -10,31 +10,25 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v2
+    - name: Checkout repository
+      uses: actions/checkout@v2
 
-      - name: Set up Docker
-        uses: docker/setup-buildx-action@v2
+    - name: Set up Ruby
+      uses: ruby/setup-ruby@v1
+      with:
+        ruby-version: '3.2.0'
 
-      - name: Install Bundler
-        run: |
-          gem install bundler
+    - name: Install Bundler
+      run: sudo gem install bundler
 
-      - name: Update http_parser.rb gem
-        run: |
-          bundle update http_parser.rb
+    - name: Install dependencies
+      run: bundle install
 
-      - name: Build the Jekyll site using Docker
-        run: |
-          docker run --rm \
-            -v ${{ github.workspace }}:/srv/jekyll \
-            -v /usr/local/bundle:/usr/local/bundle \
-            -p 4000:4000 \
-            jekyll/builder:4.2.0 \
-            jekyll build --trace
+    - name: Build Jekyll site
+      run: bundle exec jekyll build
 
-      - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: './_site'
+    - name: Deploy to GitHub Pages
+      run: |
+        git config --global user.name 'github-actions'
+        git config --global user.email 'github-actions@github.com'
+        bundle exec jekyll-deploy
