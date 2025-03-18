@@ -6,7 +6,6 @@ description: "Using Ollama, Open Web-UI, KokoroTTS, StableDiffusion and more mod
 tags: [Local AI Models, Ollama, Open WebUI, KokoroTTS, Stable Diffusion, Text-to-Speech, Image Generation, Python, Web Search, Docker, Development Guide]
 permalink: /posts/LocalAISetup  # Custom URL path (optional)
 ---
-# teste
 In this guide, we'll walk you through the process of setting up a local AI environment using various powerful tools and models. This includes using **Ollama** for model management, **Open Web-UI** for an intuitive interface, **KokoroTTS** for text-to-speech capabilities, and **Stable Diffusion** for image generation. These setups will allow you to test and run AI models locally, giving you full control over your environment for tasks and experiments.
 
 Before diving into the setup process, please review the important security information below to ensure that your local environment remains secure.
