@@ -16,6 +16,10 @@ jobs:
       - name: Set up Docker
         uses: docker/setup-buildx-action@v2
 
+      - name: Update http_parser.rb gem
+        run: |
+          bundle update http_parser.rb
+
       - name: Build the Jekyll site using Docker
         run: |
           docker run --rm \
