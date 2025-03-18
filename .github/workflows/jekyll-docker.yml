@@ -19,13 +19,43 @@ jobs:
         ruby-version: '3.2.0'
 
     - name: Install Bundler
-      run: sudo gem install bundler
+      run: gem install bundler
 
     - name: Install dependencies
       run: bundle install
 
-    - name: Install Jekyll Deploy
-      run: bundle exec gem install jekyll-deploy
+    - name: Build Jekyll site
+      run: bundle exec jekyll build
+
+    - name: Deploy to GitHub Pages
+      run: |
+        git config --global user.name 'github-actions'
+        git config --global user.email 'github-actions@github.com'
+        bundle exec jekyll-deployname: Jekyll Build and Deploy
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Set up Ruby
+      uses: ruby/setup-ruby@v1
+      with:
+        ruby-version: '3.2.0'
+
+    - name: Install Bundler
+      run: gem install bundler
+
+    - name: Install dependencies
+      run: bundle install
 
     - name: Build Jekyll site
       run: bundle exec jekyll build
