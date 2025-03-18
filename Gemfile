@@ -38,7 +38,7 @@ gem "rexml", "~> 3.3.0"
 gem "unicode-display_width", "~> 2.5.0"
 gem "google-protobuf", "~> 4.27.1"
 gem "strscan", "~> 3.1.0"
-gem "ffi", "~> 1.17.0"
+gem "ffi", "~> 1.15.4" # Specifying a compatible version of ffi
 
 gem "jekyll-mentions", "~> 1.6.0"
 
@@ -47,5 +47,3 @@ gem "jekyll-sitemap", "~> 1.4.0"
 gem "jekyll-gist", "~> 1.5.0"
 gem 'jekyll-paginate'
 gem 'jekyll-include-cache'
-
-
