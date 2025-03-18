@@ -1,0 +1,6 @@
+# Allow crawling of all content
+User-agent: *
+Allow: /
+
+# Specify the location of the sitemap
+Sitemap: https://alanthebrighter.github.io/sitemap.xml

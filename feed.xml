@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator><link href="https://alanthebrighter.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://alanthebrighter.github.io/" rel="alternate" type="text/html" /><updated>2025-03-18T16:10:54+00:00</updated><id>https://alanthebrighter.github.io/feed.xml</id><title type="html">Brighter Spot</title><subtitle>Blog documentations.</subtitle><entry><title type="html">DOC: Installing Local AI Models</title><link href="https://alanthebrighter.github.io/posts/LocalAISetup" rel="alternate" type="text/html" title="DOC: Installing Local AI Models" /><published>2025-03-08T15:04:17+00:00</published><updated>2025-03-08T15:04:17+00:00</updated><id>https://alanthebrighter.github.io/posts/AI-Development-Environment</id><content type="html" xml:base="https://alanthebrighter.github.io/posts/LocalAISetup"><![CDATA[<p>In this guide, we’ll walk you through the process of setting up a local AI environment using various powerful tools and models. This includes using <strong>Ollama</strong> for model management, <strong>Open Web-UI</strong> for an intuitive interface, <strong>KokoroTTS</strong> for text-to-speech capabilities, and <strong>Stable Diffusion</strong> for image generation. These setups will allow you to test and run AI models locally, giving you full control over your environment for tasks and experiments.</p>
+
+<p>Before diving into the setup process, please review the important security information below to ensure that your local environment remains secure.</p>
+
+<h2 id="️-security-notice">⚠️ <strong>Security Notice</strong></h2>
+<p>This document provides steps to set up a local AI environment. <strong>Do not share or expose sensitive information</strong>, such as API keys, authentication tokens, or private data, in public repositories or forums.</p>
+
+<ul>
+  <li><strong>Environment Variables:</strong> Always store API keys and credentials securely using <code class="language-plaintext highlighter-rouge">.env</code> files or system environment variables.</li>
+  <li><strong>Web Services &amp; Ports:</strong> If exposing services (e.g., Open WebUI, Docker containers), ensure proper firewall rules and authentication measures are in place.</li>
+  <li><strong>Google API Key &amp; Engine ID:</strong> Keep these confidential. Do not hardcode them in public code or documentation.</li>
+</ul>
+
+<p><strong>Use this guide responsibly and follow best security practices to protect your data and infrastructure.</strong></p>
+
+<hr />
+
+<h2 id="-start-sources">📂 Start Sources</h2>
+
+<h3 id="-setting-up-a-ai-dev-env">🧑‍💻 Setting up a AI Dev Env</h3>
+<p><a href="https://youtu.be/6zo80iyLkjQ?list=PLI--os-5eUftg2UHFw7NO6R5PfEW9oHxM">Beginner’s Guide: Setting Up Your AI Development Environment with VSCode, GitHub, Cline &amp; OpenRouter</a></p>
+
+<p><a href="https://youtu.be/RXi0Cz0ibKY?list=PLI--os-5eUftg2UHFw7NO6R5PfEW9oHxM">Run Cline FREE! The Cline Hack Nobody’s Talking About (Qwen2.5-coder-tools)</a>
+***</p>
+
+<h3 id="-setting-up-open-webui">🤖 Setting up Open WebUI</h3>
+<p><a href="https://www.restack.io/p/ollama-answer-environment-variables-cat-ai">Ollama Environment Variables</a>
+This PC -&gt; Properties -&gt; Advanced System Setting -&gt; Environment Variables -&gt;  New System Variables</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Variable name</th>
+      <th>Variable value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>OLLAMA_MODELS</td>
+      <td>path to the folder</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+<h3 id="-installing-and-using-anaconda">🐍 Installing and using Anaconda</h3>
+<p><a href="https://anaconda.org/">Anaconda.org</a>
+<code class="language-plaintext highlighter-rouge">conda --version</code><br />
+<code class="language-plaintext highlighter-rouge">conda create --name env_p311 python=3.11</code> :: Create a <strong>new environment</strong> called env_p311 with Python 3.11<br />
+<code class="language-plaintext highlighter-rouge">activate env_p311</code> :: <strong>Activate</strong> the environment<br />
+<code class="language-plaintext highlighter-rouge">conda deactivate</code>  <strong>Deactivate</strong> the environment<br />
+<code class="language-plaintext highlighter-rouge">conda remove --name env_p311 --all</code> :: <strong>Removing</strong> an environment<br />
+<code class="language-plaintext highlighter-rouge">conda env list</code> :: List all environments</p>
+
+<hr />
+<h3 id="-install-open-webui">🌐 Install Open WebUI</h3>
+<p><a href="https://github.com/open-webui/open-webui">Open WebUI GitHub</a>
+Inside Conda Environment<br />
+<code class="language-plaintext highlighter-rouge">pip install open-webui</code> :: Install Open WebUI<br />
+<code class="language-plaintext highlighter-rouge">open-webui serve</code> :: Run Open WebUI Server<br />
+Access: http://localhost:8080/</p>
+
+<hr />
+<h3 id="-installing-models">👩‍🦲 Installing Models</h3>
+<p><a href="https://ollama.com/library">Ollama Models Library</a>
+Choose a model<br />
+Example: qwen2.5-coder:7b<br />
+Open the Admin Panel in Open WebUI by clicking on the username in the bottom left-hand corner, navigate to Settings -&gt; Models, Click the Down Arrow in the upper left-hand corner, insert the name of the model below the “Pull a model from Ollama.com”, Click the Download button.</p>
+
+<hr />
+<h3 id="️-installing-kokoro">❣️ Installing Kokoro</h3>
+<p><a href="https://docs.openwebui.com/tutorials/text-to-speech/Kokoro-FastAPI-integration">Tutorial how to install Kokoro</a>
+<a href="https://youtu.be/UzpGgC2SmzI">Open WebUI: Kokoro TTS Setup Guide</a>
+<a href="https://huggingface.co/hexgrad/Kokoro-82M/blob/main/VOICES.md#british-english">Model Voices</a>
+<a href="https://github.com/ggerganov/whisper.cpp">Speech to Text Database</a></p>
+
+<p><code class="language-plaintext highlighter-rouge">docker run --gpus all -p 8880:8880 ghcr.io/remsky/kokoro-fastapi-gpu</code></p>
+
+<hr />
+<h3 id="️-enable-web-search">🕸️ Enable Web Search</h3>
+<p><a href="https://youtu.be/fwscnJu_Md0">How to Enable Web Search in Open WebUI</a><br />
+<a href="https://programmablesearchengine.google.com/controlpanel/all">Google PSE Engine Id</a><br />
+<a href="https://developers.google.com/custom-search/v1/introduction">Google PSE API Key</a></p>
+
+<p>Open the Admin Panel in Open WebUI by clicking on the username in the bottom left-hand corner, navigate to Settings -&gt; Web Search, Allow Web Search and fill the respective fields</p>
+
+<p><strong>Custom Search JSON API</strong> provides <strong>100 search</strong> queries per day <strong>for free</strong>. If you need more, you may sign up for <a href="https://cloud.google.com/billing/docs/how-to/manage-billing-account">billing</a> in the API Console. Additional requests cost $5 per 1000 queries, up to 10k queries per day.</p>
+
+<hr />
+<h3 id="️-installing-stable-diffusion">🖼️ Installing Stable Diffusion</h3>
+<p><a href="https://github.com/AUTOMATIC1111/stable-diffusion-webui">Stable Diffusion web UI</a>
+<a href="https://github.com/Mikubill/sd-webui-controlnet">ControlNet for Stable Diffusion WebUI</a>
+<a href="https://stable-diffusion-art.com/controlnet/">ControlNet Install - Tutorial</a>
+<a href="https://docs.openwebui.com/tutorials/images/">Open WebUI with AUTOMATIC1111</a>
+<a href="https://ollama.com/brxce/stable-diffusion-prompt-generator">Stable Diffusion Prompt Generator</a></p>
+
+<p><code class="language-plaintext highlighter-rouge">repeat it back:</code></p>
+
+<hr />]]></content><author><name></name></author><category term="Local AI Models" /><category term="Ollama" /><category term="Open WebUI" /><category term="KokoroTTS" /><category term="Stable Diffusion" /><category term="Text-to-Speech" /><category term="Image Generation" /><category term="Python" /><category term="Web Search" /><category term="Docker" /><category term="Development Guide" /><summary type="html"><![CDATA[Using Ollama, Open Web-UI, KokoroTTS, StableDiffusion and more models from Ollama to build a local AI environment for tests and tasks.]]></summary></entry></feed>
