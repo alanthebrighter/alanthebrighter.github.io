@@ -26,6 +26,7 @@ end
 gem "http_parser.rb", "~> 0.6.0", :platforms => [:jruby]
 
 # Additional gems (no duplicates)
+gem 'jekyll-deploy'
 gem "concurrent-ruby", "~> 1.3.3"
 gem "addressable", "~> 2.8.6"
 gem "i18n", "~> 1.14.5"
