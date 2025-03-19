@@ -196,3 +196,5 @@ You can search for applications with yay by providing a search clue. Yay will se
 - [🛠️ Fix "code" fonts and symbols (not only in Discord!) - Arch Linux](https://youtu.be/hTklkv0_s-U) 
 
 - [Activating Numlock on Bootup](https://wiki.archlinux.org/title/Activating_numlock_on_bootup) 
+
+- <a href="https://wiki.archlinux.org/title/Activating_numlock_on_bootup" target="_blank"> teste Activating Numlock on Bootup</a>
