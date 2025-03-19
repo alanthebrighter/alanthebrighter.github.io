@@ -24,8 +24,7 @@ Data Engineer and Analysis:
 Productivity:  
 Gaming(optional):  
 
-  
-  
+---
 
 ### 💢 The most painful experience that I already have
 
@@ -39,7 +38,7 @@ If wasn't for the help of multiple AI(ChatGPT, DeepSeek, Claude) to help me solv
 
 After Booting USB Flash with UEFI, Ethernet was working, every seemed okay, so I ran: `ping -c 3 google.com`, to test the network, since the network was okay, then `arch install`, to start the simple method of installation, made some basic configs, used recommended partition setup to the storage with BTRFS option. English, US, Brazil Mirror, en_US, UTF-8, systemcmd-bootctl, yes, created a new user with root privileges, desktop, KDE Plasma, sddm, first PulseAudio later changed for PipeWire, Linux, network as same as the USB boot, sao_paulo, true.
 
-![Arch Install Menu](https://diolinux.com.br/wp-content/uploads/2022/11/instalar-o-arch-linux-menu-inicial-padrao-760x569.jpg)  
+![Arch Install Menu](https://blog.desdelinux.net/wp-content/uploads/2022/04/Arch-Install.png)  
 
 That was my Installation configs.
 
