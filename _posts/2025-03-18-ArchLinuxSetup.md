@@ -66,21 +66,20 @@ That was my Installation configs.
 You can search for applications with yay by providing a search clue. Yay will search the AUR and return a list of results.
 
 #### 📦 Installed Packages
-- [X]  Google Chrome
-- [X]  GitHub Desktop
-- [X] Visual Studio Code
-- [X] MySQL Workbench
-- [X] Discord
-- [X] Web Whatsapp(Website to App)
-- [X] Steam
-- [ ] Notion
-- [ ] Docker
-- [ ] MySQL(Client and Server)
-- [ ] Postman
-- [ ] Ollama
-- [ ] Open-WebUI  
-- [ ] Cloud Backup
-- [ ] 
+- [X] -> Google Chrome
+- [X] -> GitHub Desktop
+- [X] -> Visual Studio Code
+- [X] -> MySQL Workbench
+- [X] -> Discord
+- [X] -> Web Whatsapp(Website to App)
+- [X] -> Steam
+- [ ] -> Notion
+- [ ] -> Docker
+- [ ] -> MySQL(Client and Server)
+- [ ] -> Postman
+- [ ] -> Ollama
+- [ ] -> Open-WebUI
+- [ ] -> Cloud Backup  
 ---
 #### 📂 Resources
 - [Arch Linux Downloads](https://archlinux.org/download/)  
