@@ -18,16 +18,11 @@ permalink: /posts/ArchLinuxSetup # Custom URL path (optional)
   
 
 ### ☑️ Main goal
-
-Setup the Arch Linux distro for multiple purposes including:
-
-Cyber-security/Ethical Hacking:
-
-Data Engineer and Analysis:
-
-Productivity:
-
-Gaming(optional):
+Setup the Arch Linux distro for multiple purposes including:  
+Cyber-security/Ethical Hacking:  
+Data Engineer and Analysis:  
+Productivity:  
+Gaming(optional):  
 
   
   
@@ -127,35 +122,35 @@ You can search for applications with yay by providing a search clue. Yay will se
 
 #### 📦 Installed Packages
 
-- [X] -> Google Chrome
+- [X] > Google Chrome
 
-- [X] -> GitHub Desktop
+- [X] > GitHub Desktop
 
-- [X] -> Visual Studio Code
+- [X] > Visual Studio Code
 
-- [X] -> MySQL Workbench
+- [X] > MySQL Workbench
 
-- [X] -> Discord
+- [X] > Discord
 
-- [X] -> Web Whatsapp(Website to App)
+- [X] > Web Whatsapp(Website to App)
 
-- [X] -> Steam
+- [X] > Steam
 
-- [ ] -> Notion
+- [ ] > Notion
 
-- [ ] -> Docker
+- [ ] > Docker
 
-- [ ] -> MySQL(Client and Server)
+- [ ] > MySQL(Client and Server)
 
-- [ ] -> Postman
+- [ ] > Postman
 
-- [ ] -> Ollama
+- [ ] > Ollama
 
-- [ ] -> Open-WebUI
+- [ ] > Open-WebUI
 
-- [ ] -> Cloud Backup
+- [ ] > Cloud Backup
 
-- [ ] ->  Kvantum(For translucent effect)
+- [ ] >  Kvantum(For translucent effect)
 
   
 
@@ -165,13 +160,13 @@ You can search for applications with yay by providing a search clue. Yay will se
 
 #### 🔧 Fixed Problems
 
-- [X] -- PipeWire-Pulse (Lower volume than normal)
+- [X] > PipeWire-Pulse (Lower volume than normal)
 
-- [X] -- PipeWire-Pulse x PulseAudio (Echo cancellation in discord)
+- [X] > PipeWire-Pulse x PulseAudio (Echo cancellation in discord)
 
-- [ ] -- Discord (Withe blank screen [Enhanced and Normal])
+- [ ] > Discord (Withe blank screen [Enhanced and Normal])
 
-- [x] -- Numlock on Bootup
+- [x] > Numlock on Bootup
 
 ---
 
