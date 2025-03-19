@@ -18,7 +18,7 @@ Gaming(optional):
 
 ### 💢 The most painful experience that already have
 Nothing works, everything is broken or in conflict, but I learned something.
-If wasn't for the help of multiple AI(ChatGPT, DeepSeek, Claude) to help me solve my problems, I would never have installed this system alone. 
+If wasn't for the help of multiple AI(ChatGPT, DeepSeek, Claude) to help me solve my problems, I would never have installed this system alone.
 - **Unsolved Problem:** Using the mouse Middle click to scroll easily the pages.
 #### 🪤 Basic Setup
 After Booting USB Flash with UEFI, Ethernet was working, every seemed okay, so I ran: `ping -c 3 google.com`, to test the network, since the network was okay, then `arch install`, to start the simple method of installation, made some basic configs, used recommended partition setup to the storage with BTRFS option. English, US, Brazil Mirror, en_US, UTF-8, systemcmd-bootctl, yes, created a new user with root privileges, desktop, KDE Plasma, sddm, first PulseAudio later changed for PipeWire, Linux, network as same as the USB boot, sao_paulo, true. 
