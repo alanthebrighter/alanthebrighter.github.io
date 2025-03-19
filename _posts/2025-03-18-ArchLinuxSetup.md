@@ -177,26 +177,14 @@ You can search for applications with yay by providing a search clue. Yay will se
 
 - [Arch Linux post install Guide](https://youtu.be/YPrhIfm3VJs)
 
-- [KDE Plasma Ricing Guide (Window scripts, latte dock, wallpaper engine)](https://youtu.be/7tWTagDykiI)
+- [KDE Plasma Ricing Guide (Window scripts, latte dock, wallpaper engine)](https://youtu.be/7tWTagDykiI){:target="_blank"}  
+- [Making KDE Plasma Look BEAUTIFUL!](https://youtu.be/R6C-RNhHMrE?si=V6BB8StbT7vvufqT){:target="_blank"}  
+- [Searching for Official Packages](https://archlinux.org/){:target="_blank"}  
+- [Arch Linux - xinitrc](https://wiki.archlinux.org/title/Xinit#xinitrc){:target="_blank"}  
+- [How to Setup Audio on Arch Linux (Pipewire)](https://youtu.be/zmNCi9wqiuU){:target="_blank"}  
+- [Upgrade your Terminal](https://youtu.be/80PHRWH84Tc){:target="_blank"}  
+- [Fish Shell](https://fishshell.com/){:target="_blank"}  
+- [Oh My Zsh](https://ohmyz.sh/){:target="_blank"}  
+- [🛠️ Fix "code" fonts and symbols (not only in Discord!) - Arch Linux](https://youtu.be/hTklkv0_s-U){:target="_blank"}  
+- [Activating Numlock on Bootup](https://wiki.archlinux.org/title/Activating_numlock_on_bootup){:target="_blank"}  
 
-- [Making KDE Plasma Look BEAUTIFUL!](https://youtu.be/R6C-RNhHMrE?si=V6BB8StbT7vvufqT)
-
-- [Searching for Official Packages](https://archlinux.org/)
-
-- [Arch Linux - xinitrc](https://wiki.archlinux.org/title/Xinit#xinitrc)
-
-- [How to Setup Audio on Arch Linux (Pipewire)](https://youtu.be/zmNCi9wqiuU)
-
-- [Upgrade your Terminal](https://youtu.be/80PHRWH84Tc)
-
--  [Fish Shell](https://fishshell.com/)
-
-- [Oh My Zsh](https://ohmyz.sh/)
-
-- [🛠️ Fix "code" fonts and symbols (not only in Discord!) - Arch Linux](https://youtu.be/hTklkv0_s-U) 
-
-- [Activating Numlock on Bootup](https://wiki.archlinux.org/title/Activating_numlock_on_bootup) 
-
-- <a href="https://wiki.archlinux.org/title/Activating_numlock_on_bootup" target="_blank"> teste Activating Numlock on Bootup</a>
-
-- [test 2](https://wiki.archlinux.org/title/Activating_numlock_on_bootup){:target="_blank"}
