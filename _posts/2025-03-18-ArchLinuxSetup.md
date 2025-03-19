@@ -17,7 +17,9 @@ Gaming(optional):
 
 
 ### 💢 The most painful experience that already have
-Nothing works, everything is broken or in conflict, but i learn some stuff
+Nothing works, everything is broken or in conflict, but I learned some thing.
+If wasn't for the help of multiples AI(ChatGPT, DeepSeek, Claude) to help me solve my problems, I would never installed this system alone. 
+- **Unsolved Problem:** Using Middle click mouse to scroll easily the pages.
 #### 🪤 Basic Setup
 After Booting USB Flash with UEFI, Ethernet was working, every seems okay, so I ran: `ping -c 3 google.com`, to test the network, since network was okay, then `arch install`, to start the simple method of installation, made some basic configs, used recommended partition setup to the storage with BTRFS option. English, US, Brazil Mirror, en_US, UTF-8, systemcmd-bootctl, yes, created a new user with root privileges, desktop, KDE Plasma, sddm, first PulseAudio later changed for PipeWire, linux, network as same as the usb boot, sao_paulo, true. 
 ![Arch Install Menu](https://diolinux.com.br/wp-content/uploads/2022/11/instalar-o-arch-linux-menu-inicial-padrao-760x569.jpg)
@@ -44,15 +46,15 @@ That was my Installation configs.
 6. Change the **ownership** of the yay directory to the **sudo user**
 7. Navigate into the **yay directory**
 8. Build the package from **PKGBUILD**
-##### Detailed steps 
-1. `sudo pacman -Syy`
-2. `sudo pacman -S --needed base-devel`
-3. `sudo pacman -S git`
-4. `sudo git clone https://aur.archlinux.org/yay.git`
-5. `cd yay`
-6. `makepkg -si`
+- Detailed steps 
+    - `sudo pacman -Syy`
+    - `sudo pacman -S --needed base-devel`
+    - `sudo pacman -S git`
+    - `sudo git clone https://aur.archlinux.org/yay.git`
+    - `cd yay`
+    - `makepkg -si`
 
-> ##### You can use yay to: 
+> You can use yay to: 
 > - Install packages from the AUR
 > - Upgrade all packages on your system
 > - Include development packages during the upgrade
@@ -63,6 +65,22 @@ That was my Installation configs.
 > - Check for development package updates  
 You can search for applications with yay by providing a search clue. Yay will search the AUR and return a list of results.
 
+#### 📦 Installed Packages
+- [X] Google Chrome
+- [X] GitHub Desktop
+- [X] Visual Studio Code
+- [X] MySQL Workbench
+- [X] Discord
+- [X] Web Whatsapp(Website to App)
+- [X] Steam
+- [ ] Notion
+- [ ] Docker
+- [ ] MySQL(Client and Server)
+- [ ] Postman
+- [ ] Ollama
+- [ ] Open-WebUI
+- [ ] Cloud Backup
+- [ ] 
 ---
 #### 📂 Resources
 - [Arch Linux Downloads](https://archlinux.org/download/)  
