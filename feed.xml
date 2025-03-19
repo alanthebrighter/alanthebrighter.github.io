@@ -1,9 +1,74 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator><link href="https://alanthebrighter.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://alanthebrighter.github.io/" rel="alternate" type="text/html" /><updated>2025-03-18T16:29:24+00:00</updated><id>https://alanthebrighter.github.io/feed.xml</id><title type="html">Brighter Spot</title><subtitle>Blog documentations.</subtitle><entry><title type="html">DOC: First time Setting up Arch Linux</title><link href="https://alanthebrighter.github.io/posts/ArchLinuxSetup" rel="alternate" type="text/html" title="DOC: First time Setting up Arch Linux" /><published>2025-03-18T04:23:17+00:00</published><updated>2025-03-18T04:23:17+00:00</updated><id>https://alanthebrighter.github.io/posts/ArchLinuxSetup</id><content type="html" xml:base="https://alanthebrighter.github.io/posts/ArchLinuxSetup"><![CDATA[<h3 id="main-goal">Main goal</h3>
-<p>Setup the Arch Linux distro for multiple purposes that includes:
-Cybersecurity/Ethical Hacking:
-Data Engineer and analysis:
-Productivity:
-Gaming(optional):</p>]]></content><author><name></name></author><category term="Arch Linux" /><category term="Cybersecurity" /><category term="Ethical Hacking" /><category term="Data Engineer" /><category term="Data Analysis" /><category term="Productiity" /><category term="Gaming" /><category term="Coding" /><summary type="html"><![CDATA[Setup the Arch Linux distro for multiple purposes that includes: Cybersecurity/Ethical Hacking, Data Engineer and analysis, Productivity and Gaming(optinal)]]></summary></entry><entry><title type="html">DOC: Installing Local AI Models</title><link href="https://alanthebrighter.github.io/posts/LocalAISetup" rel="alternate" type="text/html" title="DOC: Installing Local AI Models" /><published>2025-03-08T15:04:17+00:00</published><updated>2025-03-08T15:04:17+00:00</updated><id>https://alanthebrighter.github.io/posts/AI-Development-Environment</id><content type="html" xml:base="https://alanthebrighter.github.io/posts/LocalAISetup"><![CDATA[<p>In this guide, we’ll walk you through the process of setting up a local AI environment using various powerful tools and models. This includes using <strong>Ollama</strong> for model management, <strong>Open Web-UI</strong> for an intuitive interface, <strong>KokoroTTS</strong> for text-to-speech capabilities, and <strong>Stable Diffusion</strong> for image generation. These setups will allow you to test and run AI models locally, giving you full control over your environment for tasks and experiments.</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator><link href="https://alanthebrighter.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://alanthebrighter.github.io/" rel="alternate" type="text/html" /><updated>2025-03-19T04:01:47+00:00</updated><id>https://alanthebrighter.github.io/feed.xml</id><title type="html">Brighter Spot</title><subtitle>Blog documentations.</subtitle><entry><title type="html">DOC: First time Setting up Arch Linux</title><link href="https://alanthebrighter.github.io/posts/ArchLinuxSetup" rel="alternate" type="text/html" title="DOC: First time Setting up Arch Linux" /><published>2025-03-18T04:23:17+00:00</published><updated>2025-03-18T04:23:17+00:00</updated><id>https://alanthebrighter.github.io/posts/ArchLinuxSetup</id><content type="html" xml:base="https://alanthebrighter.github.io/posts/ArchLinuxSetup"><![CDATA[<h3 id="️-main-goal">☑️ Main goal</h3>
+<p>Setup the Arch Linux distro for multiple purposes that includes:<br />
+Cybersecurity/Ethical Hacking:<br />
+Data Engineer and analysis:<br />
+Productivity:<br />
+Gaming(optional):</p>
+
+<h3 id="-the-most-painful-experience-that-already-have">💢 The most painful experience that already have</h3>
+<p>Nothing works, everything is broken or in conflict, but i learn some stuff</p>
+<h4 id="-basic-setup">🪤 Basic Setup</h4>
+<p>After Booting USB Flash with UEFI, Ethernet was working, every seems okay, so I ran: <code class="language-plaintext highlighter-rouge">ping -c 3 google.com</code>, to test the network, since network was okay, then <code class="language-plaintext highlighter-rouge">arch install</code>, to start the simple method of installation, made some basic configs, used recommended partition setup to the storage with BTRFS option. English, US, Brazil Mirror, en_US, UTF-8, systemcmd-bootctl, yes, created a new user with root privileges, desktop, KDE Plasma, sddm, first PulseAudio later changed for PipeWire, linux, network as same as the usb boot, sao_paulo, true. 
+<img src="https://diolinux.com.br/wp-content/uploads/2022/11/instalar-o-arch-linux-menu-inicial-padrao-760x569.jpg" alt="Arch Install Menu" />
+That was my Installation configs.</p>
+
+<h4 id="-pacman-basics">👾 Pacman Basics</h4>
+<p><code class="language-plaintext highlighter-rouge">pacman -Syu</code> - Update entire system<br />
+<code class="language-plaintext highlighter-rouge">pacman -Syy</code> - Force refresh package databases<br />
+<code class="language-plaintext highlighter-rouge">pacman -S package_name</code> - Install a package<br />
+<code class="language-plaintext highlighter-rouge">pacman -R package_name</code> - Remove a package<br />
+<code class="language-plaintext highlighter-rouge">pacman -Rs package_name</code> - Remove a package and its dependencies <br />
+<code class="language-plaintext highlighter-rouge">pacman -Ss keyword</code> - Search for packages<br />
+<code class="language-plaintext highlighter-rouge">pacman -Qi package_name</code> - Display information about a package<br />
+<code class="language-plaintext highlighter-rouge">pacman -Qdt</code> - List orphaned packages<br />
+<code class="language-plaintext highlighter-rouge">yay -S package_name</code> - Install from AUR<br />
+<code class="language-plaintext highlighter-rouge">yay -Syu</code> - Update system including AUR packages</p>
+
+<h4 id="️-installing-yay">🕹️ Installing yay</h4>
+<ol>
+  <li>Log in as a <strong>sudo user</strong></li>
+  <li><strong>Update</strong> the system packages</li>
+  <li>Install the <strong>base-devel package</strong></li>
+  <li>Install <strong>git</strong></li>
+  <li>Clone the <strong>yay git repository</strong></li>
+  <li>Change the <strong>ownership</strong> of the yay directory to the <strong>sudo user</strong></li>
+  <li>Navigate into the <strong>yay directory</strong></li>
+  <li>Build the package from <strong>PKGBUILD</strong>
+    <h5 id="detailed-steps">Detailed steps</h5>
+  </li>
+  <li><code class="language-plaintext highlighter-rouge">sudo pacman -Syy</code></li>
+  <li><code class="language-plaintext highlighter-rouge">sudo pacman -S --needed base-devel</code></li>
+  <li><code class="language-plaintext highlighter-rouge">sudo pacman -S git</code></li>
+  <li><code class="language-plaintext highlighter-rouge">sudo git clone https://aur.archlinux.org/yay.git</code></li>
+  <li><code class="language-plaintext highlighter-rouge">cd yay</code></li>
+  <li><code class="language-plaintext highlighter-rouge">makepkg -si</code></li>
+</ol>
+
+<blockquote>
+  <h5 id="you-can-use-yay-to">You can use yay to:</h5>
+  <ul>
+    <li>Install packages from the AUR</li>
+    <li>Upgrade all packages on your system</li>
+    <li>Include development packages during the upgrade</li>
+    <li>Remove a package</li>
+    <li>Clean up unwanted dependencies</li>
+    <li>Print system statistics</li>
+    <li>Generate a development package database</li>
+    <li>Check for development package updates<br />
+You can search for applications with yay by providing a search clue. Yay will search the AUR and return a list of results.</li>
+  </ul>
+</blockquote>
+
+<hr />
+<h4 id="-resources">📂 Resources</h4>
+<ul>
+  <li><a href="https://archlinux.org/download/">Arch Linux Downloads</a></li>
+  <li><a href="https://wiki.archlinux.org/title/USB_flash_installation_medium#In_Windows">USB Flash installation</a></li>
+  <li><a href="https://youtu.be/YPrhIfm3VJs">Arch Linux post install Guide</a></li>
+  <li><a href="https://youtu.be/7tWTagDykiI">KDE Plasma Ricing Guide (Window scripts, latte dock, wallpaper engine)</a></li>
+  <li><a href="https://youtu.be/R6C-RNhHMrE?si=V6BB8StbT7vvufqT">Making KDE Plasma Look BEAUTIFUL!</a></li>
+  <li><a href="https://archlinux.org/">Searching for Official Packages</a></li>
+</ul>]]></content><author><name></name></author><category term="Arch Linux" /><category term="Cybersecurity" /><category term="Ethical Hacking" /><category term="Data Engineer" /><category term="Data Analysis" /><category term="Productivity" /><category term="Gaming" /><category term="Coding" /><summary type="html"><![CDATA[Setup the Arch Linux distro for multiple purposes that includes: Cybersecurity/Ethical Hacking, Data Engineer and analysis, Productivity and Gaming(optional)]]></summary></entry><entry><title type="html">DOC: Installing Local AI Models</title><link href="https://alanthebrighter.github.io/posts/LocalAISetup" rel="alternate" type="text/html" title="DOC: Installing Local AI Models" /><published>2025-03-08T15:04:17+00:00</published><updated>2025-03-08T15:04:17+00:00</updated><id>https://alanthebrighter.github.io/posts/AI-Development-Environment</id><content type="html" xml:base="https://alanthebrighter.github.io/posts/LocalAISetup"><![CDATA[<p>In this guide, we’ll walk you through the process of setting up a local AI environment using various powerful tools and models. This includes using <strong>Ollama</strong> for model management, <strong>Open Web-UI</strong> for an intuitive interface, <strong>KokoroTTS</strong> for text-to-speech capabilities, and <strong>Stable Diffusion</strong> for image generation. These setups will allow you to test and run AI models locally, giving you full control over your environment for tasks and experiments.</p>
 
 <p>Before diving into the setup process, please review the important security information below to ensure that your local environment remains secure.</p>
 
