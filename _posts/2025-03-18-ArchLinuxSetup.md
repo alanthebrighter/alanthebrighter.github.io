@@ -79,7 +79,7 @@ You can search for applications with yay by providing a search clue. Yay will se
 - [ ] Postman
 - [ ] Ollama
 - [ ] Open-WebUI
-- [ ] Cloud Backup
+[ ] Cloud Backup
 - [ ] 
 ---
 #### 📂 Resources
