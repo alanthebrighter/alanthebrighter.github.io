@@ -66,8 +66,8 @@ That was my Installation configs.
 You can search for applications with yay by providing a search clue. Yay will search the AUR and return a list of results.
 
 #### 📦 Installed Packages
-- [X] Google Chrome
-- [X] GitHub Desktop
+- [X]  Google Chrome
+- [X]  GitHub Desktop
 - [X] Visual Studio Code
 - [X] MySQL Workbench
 - [X] Discord
@@ -79,7 +79,7 @@ You can search for applications with yay by providing a search clue. Yay will se
 - [ ] Postman
 - [ ] Ollama
 - [ ] Open-WebUI  
-[ ] Cloud Backup
+- [ ] Cloud Backup
 - [ ] 
 ---
 #### 📂 Resources
