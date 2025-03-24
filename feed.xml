@@ -1,4 +1,147 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator><link href="https://alanthebrighter.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://alanthebrighter.github.io/" rel="alternate" type="text/html" /><updated>2025-03-19T15:52:59+00:00</updated><id>https://alanthebrighter.github.io/feed.xml</id><title type="html">Brighter Spot</title><subtitle>Blog documentations.</subtitle><entry><title type="html">DOC: First time Setting up Arch Linux</title><link href="https://alanthebrighter.github.io/posts/ArchLinuxSetup" rel="alternate" type="text/html" title="DOC: First time Setting up Arch Linux" /><published>2025-03-18T04:23:17+00:00</published><updated>2025-03-18T04:23:17+00:00</updated><id>https://alanthebrighter.github.io/posts/ArchLinuxSetup</id><content type="html" xml:base="https://alanthebrighter.github.io/posts/ArchLinuxSetup"><![CDATA[<h3 id="️-main-goal">☑️ Main goal</h3>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator><link href="https://alanthebrighter.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://alanthebrighter.github.io/" rel="alternate" type="text/html" /><updated>2025-03-24T18:36:01+00:00</updated><id>https://alanthebrighter.github.io/feed.xml</id><title type="html">Brighter Spot</title><subtitle>Blog documentations.</subtitle><entry><title type="html">Sql Queries Tuning</title><link href="https://alanthebrighter.github.io/SQL-Queries-Tuning/" rel="alternate" type="text/html" title="Sql Queries Tuning" /><published>2025-03-24T00:00:00+00:00</published><updated>2025-03-24T00:00:00+00:00</updated><id>https://alanthebrighter.github.io/SQL-Queries-Tuning</id><content type="html" xml:base="https://alanthebrighter.github.io/SQL-Queries-Tuning/"><![CDATA[<h1 id="documentação-otimização-de-consultas-sql">Documentação: Otimização de Consultas SQL</h1>
+
+<h2 id="introdução">Introdução</h2>
+<p>A otimização de consultas SQL é um processo essencial para melhorar o desempenho dos bancos de dados, garantindo maior eficiência na execução de consultas e no uso de recursos. Este documento apresenta conceitos fundamentais, técnicas práticas e exemplos para otimização de queries SQL.</p>
+
+<hr />
+
+<h2 id="1-fundamentos-da-otimização-de-consultas-sql">1. Fundamentos da Otimização de Consultas SQL</h2>
+
+<h3 id="11-o-que-é-sql-tuning">1.1 O que é SQL Tuning?</h3>
+<p>SQL Tuning refere-se ao processo de otimização de consultas para melhorar o desempenho do banco de dados. Os principais objetivos são:</p>
+<ul>
+  <li>Reduzir o tempo de execução das queries.</li>
+  <li>Minimizar o consumo de recursos.</li>
+  <li>Melhorar a experiência do usuário final.</li>
+</ul>
+
+<h3 id="12-principais-causas-de-consultas-lentas">1.2 Principais causas de consultas lentas</h3>
+<ul>
+  <li>Volume excessivo de dados retornados.</li>
+  <li>Falta de índices otimizados.</li>
+  <li>Uso inadequado de joins e subconsultas.</li>
+  <li>Falta de filtros eficientes (WHERE, LIMIT, etc.).</li>
+</ul>
+
+<hr />
+
+<h2 id="2-identificação-de-gargalos">2. Identificação de Gargalos</h2>
+
+<h3 id="21-uso-do-explain">2.1 Uso do EXPLAIN</h3>
+<p>O comando <code class="language-plaintext highlighter-rouge">EXPLAIN</code> permite visualizar como uma consulta SQL será executada, ajudando a identificar gargalos e oportunidades de otimização.</p>
+
+<h4 id="exemplo-de-uso-do-explain">Exemplo de uso do EXPLAIN:</h4>
+<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">EXPLAIN</span> <span class="k">ANALYZE</span> <span class="k">SELECT</span> <span class="n">id</span><span class="p">,</span> <span class="n">name</span> <span class="k">FROM</span> <span class="n">customers</span> <span class="k">WHERE</span> <span class="n">country</span> <span class="o">=</span> <span class="s1">'Brazil'</span><span class="p">;</span>
+</code></pre></div></div>
+
+<p>Esse comando retorna informações sobre o plano de execução da consulta, incluindo:</p>
+<ul>
+  <li>Estratégia de busca (Index Scan, Sequential Scan, etc.).</li>
+  <li>Custo estimado de execução.</li>
+  <li>Quantidade de linhas processadas.</li>
+</ul>
+
+<h3 id="22-uso-de-índices">2.2 Uso de Índices</h3>
+<p>Os índices aceleram a recuperação de dados ao evitar buscas sequenciais desnecessárias. Existem diferentes tipos de índices:</p>
+
+<ul>
+  <li><strong>B-Tree Index</strong>: Mais comum, usado para colunas com valores ordenados.</li>
+  <li><strong>Full-Text Index</strong>: Otimiza buscas em grandes volumes de texto.</li>
+  <li><strong>Hash Index</strong>: Ideal para buscas exatas.</li>
+</ul>
+
+<h4 id="exemplo-de-criação-de-um-índice">Exemplo de criação de um índice:</h4>
+<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">CREATE</span> <span class="k">INDEX</span> <span class="n">idx_customers_country</span> <span class="k">ON</span> <span class="n">customers</span> <span class="p">(</span><span class="n">country</span><span class="p">);</span>
+</code></pre></div></div>
+
+<p>Esse índice melhora consultas que filtram pela coluna <code class="language-plaintext highlighter-rouge">country</code>.</p>
+
+<hr />
+
+<h2 id="3-boas-práticas-para-otimização">3. Boas Práticas para Otimização</h2>
+
+<h3 id="31-evite-select-">3.1 Evite <code class="language-plaintext highlighter-rouge">SELECT *</code></h3>
+<p>O <code class="language-plaintext highlighter-rouge">SELECT *</code> recupera todas as colunas da tabela, consumindo mais recursos do que o necessário.</p>
+
+<h4 id="alternativa-otimizada">Alternativa otimizada:</h4>
+<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">SELECT</span> <span class="n">id</span><span class="p">,</span> <span class="n">name</span> <span class="k">FROM</span> <span class="n">customers</span><span class="p">;</span>
+</code></pre></div></div>
+
+<h3 id="32-utilize-where-para-filtragem">3.2 Utilize WHERE para Filtragem</h3>
+<p>O uso de filtros reduz o número de registros processados, melhorando a performance.</p>
+
+<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">SELECT</span> <span class="n">id</span><span class="p">,</span> <span class="n">name</span> <span class="k">FROM</span> <span class="n">customers</span> <span class="k">WHERE</span> <span class="n">country</span> <span class="o">=</span> <span class="s1">'Brazil'</span><span class="p">;</span>
+</code></pre></div></div>
+
+<h3 id="33-prefira-joins-ao-invés-de-subconsultas">3.3 Prefira JOINs ao invés de Subconsultas</h3>
+<p>Subconsultas são menos eficientes e podem ser substituídas por <code class="language-plaintext highlighter-rouge">JOINs</code>.</p>
+
+<h4 id="exemplo-com-subquery-menos-eficiente">Exemplo com subquery (menos eficiente):</h4>
+<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">SELECT</span> <span class="n">name</span><span class="p">,</span> <span class="p">(</span><span class="k">SELECT</span> <span class="k">SUM</span><span class="p">(</span><span class="n">amount</span><span class="p">)</span> <span class="k">FROM</span> <span class="n">orders</span> <span class="k">WHERE</span> <span class="n">orders</span><span class="p">.</span><span class="n">customer_id</span> <span class="o">=</span> <span class="n">customers</span><span class="p">.</span><span class="n">id</span><span class="p">)</span> <span class="k">AS</span> <span class="n">total_spent</span>
+<span class="k">FROM</span> <span class="n">customers</span><span class="p">;</span>
+</code></pre></div></div>
+
+<h4 id="exemplo-otimizado-com-join">Exemplo otimizado com JOIN:</h4>
+<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">SELECT</span> <span class="n">customers</span><span class="p">.</span><span class="n">name</span><span class="p">,</span> <span class="k">SUM</span><span class="p">(</span><span class="n">orders</span><span class="p">.</span><span class="n">amount</span><span class="p">)</span> <span class="k">AS</span> <span class="n">total_spent</span>
+<span class="k">FROM</span> <span class="n">customers</span>
+<span class="k">JOIN</span> <span class="n">orders</span> <span class="k">ON</span> <span class="n">customers</span><span class="p">.</span><span class="n">id</span> <span class="o">=</span> <span class="n">orders</span><span class="p">.</span><span class="n">customer_id</span>
+<span class="k">GROUP</span> <span class="k">BY</span> <span class="n">customers</span><span class="p">.</span><span class="n">name</span><span class="p">;</span>
+</code></pre></div></div>
+
+<h3 id="34-evite-funções-sobre-colunas-indexadas">3.4 Evite Funções sobre Colunas Indexadas</h3>
+<p>Funções aplicadas diretamente sobre colunas indexadas podem invalidar o uso do índice.</p>
+
+<h4 id="exemplo-ineficiente">Exemplo ineficiente:</h4>
+<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">SELECT</span> <span class="o">*</span> <span class="k">FROM</span> <span class="n">customers</span> <span class="k">WHERE</span> <span class="k">UPPER</span><span class="p">(</span><span class="n">name</span><span class="p">)</span> <span class="o">=</span> <span class="s1">'JOHN DOE'</span><span class="p">;</span>
+</code></pre></div></div>
+
+<h4 id="alternativa-otimizada-1">Alternativa otimizada:</h4>
+<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">SELECT</span> <span class="o">*</span> <span class="k">FROM</span> <span class="n">customers</span> <span class="k">WHERE</span> <span class="n">name</span> <span class="o">=</span> <span class="s1">'John Doe'</span><span class="p">;</span>
+</code></pre></div></div>
+
+<h3 id="35-evite-excessos-de-índices">3.5 Evite Excessos de Índices</h3>
+<p>Embora índices otimizem consultas <code class="language-plaintext highlighter-rouge">SELECT</code>, um excesso de índices pode impactar negativamente <code class="language-plaintext highlighter-rouge">INSERTs</code>, <code class="language-plaintext highlighter-rouge">UPDATEs</code> e <code class="language-plaintext highlighter-rouge">DELETEs</code>, pois o banco precisa atualizar os índices a cada mudança de dado.</p>
+
+<hr />
+
+<h2 id="4-considerações-finais">4. Considerações Finais</h2>
+
+<h3 id="41-benefícios-da-otimização">4.1 Benefícios da Otimização</h3>
+<ul>
+  <li>Redução do tempo de resposta.</li>
+  <li>Diminuição do uso de recursos computacionais.</li>
+  <li>Melhor escalabilidade para grandes volumes de dados.</li>
+</ul>
+
+<h3 id="42-ferramentas-recomendadas">4.2 Ferramentas Recomendadas</h3>
+<ul>
+  <li><strong>EXPLAIN ANALYZE</strong> (PostgreSQL, MySQL, SQL Server)</li>
+  <li><strong>SQL Profiler</strong> (SQL Server)</li>
+  <li><strong>Query Plan Visualization</strong> (PostgreSQL, MySQL)</li>
+</ul>
+
+<h3 id="43-recursos-adicionais">4.3 Recursos Adicionais</h3>
+<ul>
+  <li><a href="https://dev.mysql.com/doc/refman/8.0/en/explain-output.html">Guia Oficial do MySQL EXPLAIN</a></li>
+  <li><a href="https://www.postgresql.org/docs/current/using-explain.html">PostgreSQL Query Optimization</a></li>
+  <li><a href="https://docs.microsoft.com/en-us/sql/relational-databases/indexes/indexes?view=sql-server-ver15">SQL Server Index Strategies</a></li>
+</ul>
+
+<hr />
+
+<h2 id="5-exercícios-práticos">5. Exercícios Práticos</h2>
+
+<ol>
+  <li>Execute um <code class="language-plaintext highlighter-rouge">SELECT *</code> em uma tabela com muitos registros e compare o tempo de execução com um <code class="language-plaintext highlighter-rouge">SELECT</code> especificando colunas.</li>
+  <li>Utilize <code class="language-plaintext highlighter-rouge">EXPLAIN ANALYZE</code> para verificar o impacto do uso de um índice antes e depois de sua criação.</li>
+  <li>Reescreva uma consulta que usa subquery para utilizar <code class="language-plaintext highlighter-rouge">JOIN</code> e compare a performance.</li>
+</ol>
+
+<p>Essa documentação serve como base para estudo e referência para otimização de consultas SQL. Seguir essas boas práticas ajudará a melhorar o desempenho de bancos de dados e a eficiência das aplicações.</p>
+
+<hr />
+
+<p><strong>Autor:</strong> Baseado na mentoria da Dio sobre otimização de consultas SQL.</p>]]></content><author><name></name></author><summary type="html"><![CDATA[Documentação: Otimização de Consultas SQL]]></summary></entry><entry><title type="html">DOC: First time Setting up Arch Linux</title><link href="https://alanthebrighter.github.io/posts/ArchLinuxSetup" rel="alternate" type="text/html" title="DOC: First time Setting up Arch Linux" /><published>2025-03-18T04:23:17+00:00</published><updated>2025-03-18T04:23:17+00:00</updated><id>https://alanthebrighter.github.io/posts/ArchLinuxSetup</id><content type="html" xml:base="https://alanthebrighter.github.io/posts/ArchLinuxSetup"><![CDATA[<h3 id="️-main-goal">☑️ Main goal</h3>
 <p>Setup the Arch Linux distro for multiple purposes including:<br />
 Cyber-security/Ethical Hacking:<br />
 Data Engineer and Analysis:<br />
