@@ -22,6 +22,8 @@ Gaming(optional):
 
 ---
 
+### 🫠 I gave up -- It's over
+
 I gave up on the idea and migrated to Ubuntu Budgie, as it is simpler in terms of usability, whose objective is to have a system that works quickly as a tool, as a case for study and application in other areas. I found the experience interesting and in the future I plan to go back and try once again to configure an Arch Linux that works stably as I want, but for now, I will stick with Ubuntu and more user-friendly distros.
 
 ### 💢 The most painful experience that I already have
