@@ -1,3 +1,19 @@
+---
+
+layout: post
+
+title: "DOC: SQL Query Optimization"
+
+date: 2025-03-24 3:39:17 -03:00
+
+description: "SQL query optimization is an essential process for improving database performance, ensuring more efficient query execution and resource usage. This document presents fundamental concepts, practical techniques, and examples for SQL query optimization."
+
+tags: [SQL, Tuning, Optimization, MySQL, MS-SQL, Postgres, Database Optimization, SQL Performance, Indexes]
+
+permalink: /posts/SQL-Query-Optimization # Custom URL path (optional)
+
+---
+
 # Documentation: SQL Query Optimization
 SQL query optimization is an essential process for improving database performance, ensuring more efficient query execution and resource usage. This document presents fundamental concepts, practical techniques, and examples for SQL query optimization.
 
