@@ -36,7 +36,7 @@ jobs:
           ${{ runner.os }}-gems-
 
     - name: Install dependencies
-      run: bundle install --verbose
+      run: bundle install --verbose  # Enable verbose logging
 
     - name: Build Jekyll site
       run: bundle exec jekyll build
