@@ -4,6 +4,22 @@
         xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     
     <url>
+        <loc>https://alanthebrighter.github.io/posts/UbuntuHyprland</loc>
+        
+        <lastmod>2025-03-30T12:56:30+00:00</lastmod>
+        
+
+        
+        <changefreq>always</changefreq>
+        
+
+        
+        <priority>0.5</priority>
+        
+
+    </url>
+    
+    <url>
         <loc>https://alanthebrighter.github.io/posts/SQL-Query-Optimization</loc>
         
         <lastmod>2025-03-24T06:39:17+00:00</lastmod>
