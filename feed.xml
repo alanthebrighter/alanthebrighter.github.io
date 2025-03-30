@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator><link href="https://alanthebrighter.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://alanthebrighter.github.io/" rel="alternate" type="text/html" /><updated>2025-03-30T13:37:18+00:00</updated><id>https://alanthebrighter.github.io/feed.xml</id><title type="html">Brighter Spot</title><subtitle>Blog documentations.</subtitle><entry><title type="html">DOC: Installing and Using Hyprland on Ubuntu</title><link href="https://alanthebrighter.github.io/posts/UbuntuHyprland" rel="alternate" type="text/html" title="DOC: Installing and Using Hyprland on Ubuntu" /><published>2025-03-30T12:56:30+00:00</published><updated>2025-03-30T12:56:30+00:00</updated><id>https://alanthebrighter.github.io/posts/Installing&amp;Using-Ubuntu-Noble-with-hyprland</id><content type="html" xml:base="https://alanthebrighter.github.io/posts/UbuntuHyprland"><![CDATA[<p>Setting Up Ubuntu Noble 24.04 LTS with Hyprland Using <a href="https://github.com/JaKooLit/Ubuntu-Hyprland">JaKooLit’s Script</a>.<br />
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator><link href="https://alanthebrighter.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://alanthebrighter.github.io/" rel="alternate" type="text/html" /><updated>2025-03-30T13:45:03+00:00</updated><id>https://alanthebrighter.github.io/feed.xml</id><title type="html">Brighter Spot</title><subtitle>Blog documentations.</subtitle><entry><title type="html">DOC: Installing and Using Hyprland on Ubuntu</title><link href="https://alanthebrighter.github.io/posts/UbuntuHyprland" rel="alternate" type="text/html" title="DOC: Installing and Using Hyprland on Ubuntu" /><published>2025-03-30T12:56:30+00:00</published><updated>2025-03-30T12:56:30+00:00</updated><id>https://alanthebrighter.github.io/posts/Installing&amp;Using-Ubuntu-Noble-with-hyprland</id><content type="html" xml:base="https://alanthebrighter.github.io/posts/UbuntuHyprland"><![CDATA[<p>Setting Up Ubuntu Noble 24.04 LTS with Hyprland Using <a href="https://github.com/JaKooLit/Ubuntu-Hyprland">JaKooLit’s Script</a>.<br />
 Ubuntu Noble 24.04 LTS is the latest long-term support release, offering stability and performance. If you’re looking for a sleek, highly customizable window manager, Hyprland is a fantastic choice.<br />
 In this guide, I’ll walk you through my experience setting up Ubuntu 24.04 with Hyprland using JaKooLit’s automated script.<br />
 This script simplifies the installation process, configuring everything from essential dependencies to a well-optimized Hyprland environment. Whether you’re a beginner or an experienced Linux user, this setup will help you achieve a modern, stylish, and efficient desktop experience.</p>
@@ -120,8 +120,9 @@ Hyprland</p>]]></content><author><name></name></author><category term="Linux" />
 <p>The <code class="language-plaintext highlighter-rouge">EXPLAIN</code> command allows you to visualize how an SQL query will be executed, helping to identify bottlenecks and optimization opportunities.</p>
 
 <h4 id="example-of-using-explain">Example of using EXPLAIN:</h4>
-<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">EXPLAIN</span> <span class="k">ANALYZE</span> <span class="k">SELECT</span> <span class="n">id</span><span class="p">,</span> <span class="n">name</span> <span class="k">FROM</span> <span class="n">customers</span> <span class="k">WHERE</span> <span class="n">country</span> <span class="o">=</span> <span class="s1">'Brazil'</span><span class="p">;</span>
-</code></pre></div></div>
+<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre><span class="k">EXPLAIN</span> <span class="k">ANALYZE</span> <span class="k">SELECT</span> <span class="n">id</span><span class="p">,</span> <span class="n">name</span> <span class="k">FROM</span> <span class="n">customers</span> <span class="k">WHERE</span> <span class="n">country</span> <span class="o">=</span> <span class="s1">'Brazil'</span><span class="p">;</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
 
 <p>This command returns information about the query execution plan, including:</p>
 <ul>
@@ -140,8 +141,9 @@ Hyprland</p>]]></content><author><name></name></author><category term="Linux" />
 </ul>
 
 <h4 id="example-of-creating-an-index">Example of creating an index:</h4>
-<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">CREATE</span> <span class="k">INDEX</span> <span class="n">idx_customers_country</span> <span class="k">ON</span> <span class="n">customers</span> <span class="p">(</span><span class="n">country</span><span class="p">);</span>
-</code></pre></div></div>
+<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre><span class="k">CREATE</span> <span class="k">INDEX</span> <span class="n">idx_customers_country</span> <span class="k">ON</span> <span class="n">customers</span> <span class="p">(</span><span class="n">country</span><span class="p">);</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
 
 <p>This index improves queries filtering by the <code class="language-plaintext highlighter-rouge">country</code> column.</p>
 
@@ -153,40 +155,50 @@ Hyprland</p>]]></content><author><name></name></author><category term="Linux" />
 <p><code class="language-plaintext highlighter-rouge">SELECT *</code> retrieves all table columns, consuming more resources than necessary.</p>
 
 <h4 id="optimized-alternative">Optimized alternative:</h4>
-<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">SELECT</span> <span class="n">id</span><span class="p">,</span> <span class="n">name</span> <span class="k">FROM</span> <span class="n">customers</span><span class="p">;</span>
-</code></pre></div></div>
+<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre><span class="k">SELECT</span> <span class="n">id</span><span class="p">,</span> <span class="n">name</span> <span class="k">FROM</span> <span class="n">customers</span><span class="p">;</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
 
 <h3 id="32-use-where-for-filtering">3.2 Use WHERE for Filtering</h3>
 <p>Using filters reduces the number of processed records, improving performance.</p>
 
-<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">SELECT</span> <span class="n">id</span><span class="p">,</span> <span class="n">name</span> <span class="k">FROM</span> <span class="n">customers</span> <span class="k">WHERE</span> <span class="n">country</span> <span class="o">=</span> <span class="s1">'Brazil'</span><span class="p">;</span>
-</code></pre></div></div>
+<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre><span class="k">SELECT</span> <span class="n">id</span><span class="p">,</span> <span class="n">name</span> <span class="k">FROM</span> <span class="n">customers</span> <span class="k">WHERE</span> <span class="n">country</span> <span class="o">=</span> <span class="s1">'Brazil'</span><span class="p">;</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
 
 <h3 id="33-prefer-joins-over-subqueries">3.3 Prefer JOINs Over Subqueries</h3>
 <p>Subqueries are less efficient and can be replaced by <code class="language-plaintext highlighter-rouge">JOINs</code>.</p>
 
 <h4 id="example-with-subquery-less-efficient">Example with subquery (less efficient):</h4>
-<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">SELECT</span> <span class="n">name</span><span class="p">,</span> <span class="p">(</span><span class="k">SELECT</span> <span class="k">SUM</span><span class="p">(</span><span class="n">amount</span><span class="p">)</span> <span class="k">FROM</span> <span class="n">orders</span> <span class="k">WHERE</span> <span class="n">orders</span><span class="p">.</span><span class="n">customer_id</span> <span class="o">=</span> <span class="n">customers</span><span class="p">.</span><span class="n">id</span><span class="p">)</span> <span class="k">AS</span> <span class="n">total_spent</span>
+<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+</pre></td><td class="rouge-code"><pre><span class="k">SELECT</span> <span class="n">name</span><span class="p">,</span> <span class="p">(</span><span class="k">SELECT</span> <span class="k">SUM</span><span class="p">(</span><span class="n">amount</span><span class="p">)</span> <span class="k">FROM</span> <span class="n">orders</span> <span class="k">WHERE</span> <span class="n">orders</span><span class="p">.</span><span class="n">customer_id</span> <span class="o">=</span> <span class="n">customers</span><span class="p">.</span><span class="n">id</span><span class="p">)</span> <span class="k">AS</span> <span class="n">total_spent</span>
 <span class="k">FROM</span> <span class="n">customers</span><span class="p">;</span>
-</code></pre></div></div>
+</pre></td></tr></tbody></table></code></pre></div></div>
 
 <h4 id="optimized-example-with-join">Optimized example with JOIN:</h4>
-<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">SELECT</span> <span class="n">customers</span><span class="p">.</span><span class="n">name</span><span class="p">,</span> <span class="k">SUM</span><span class="p">(</span><span class="n">orders</span><span class="p">.</span><span class="n">amount</span><span class="p">)</span> <span class="k">AS</span> <span class="n">total_spent</span>
+<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+</pre></td><td class="rouge-code"><pre><span class="k">SELECT</span> <span class="n">customers</span><span class="p">.</span><span class="n">name</span><span class="p">,</span> <span class="k">SUM</span><span class="p">(</span><span class="n">orders</span><span class="p">.</span><span class="n">amount</span><span class="p">)</span> <span class="k">AS</span> <span class="n">total_spent</span>
 <span class="k">FROM</span> <span class="n">customers</span>
 <span class="k">JOIN</span> <span class="n">orders</span> <span class="k">ON</span> <span class="n">customers</span><span class="p">.</span><span class="n">id</span> <span class="o">=</span> <span class="n">orders</span><span class="p">.</span><span class="n">customer_id</span>
 <span class="k">GROUP</span> <span class="k">BY</span> <span class="n">customers</span><span class="p">.</span><span class="n">name</span><span class="p">;</span>
-</code></pre></div></div>
+</pre></td></tr></tbody></table></code></pre></div></div>
 
 <h3 id="34-avoid-functions-on-indexed-columns">3.4 Avoid Functions on Indexed Columns</h3>
 <p>Functions applied directly to indexed columns can invalidate the use of the index.</p>
 
 <h4 id="inefficient-example">Inefficient example:</h4>
-<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">SELECT</span> <span class="o">*</span> <span class="k">FROM</span> <span class="n">customers</span> <span class="k">WHERE</span> <span class="k">UPPER</span><span class="p">(</span><span class="n">name</span><span class="p">)</span> <span class="o">=</span> <span class="s1">'JOHN DOE'</span><span class="p">;</span>
-</code></pre></div></div>
+<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre><span class="k">SELECT</span> <span class="o">*</span> <span class="k">FROM</span> <span class="n">customers</span> <span class="k">WHERE</span> <span class="k">UPPER</span><span class="p">(</span><span class="n">name</span><span class="p">)</span> <span class="o">=</span> <span class="s1">'JOHN DOE'</span><span class="p">;</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
 
 <h4 id="optimized-alternative-1">Optimized alternative:</h4>
-<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">SELECT</span> <span class="o">*</span> <span class="k">FROM</span> <span class="n">customers</span> <span class="k">WHERE</span> <span class="n">name</span> <span class="o">=</span> <span class="s1">'John Doe'</span><span class="p">;</span>
-</code></pre></div></div>
+<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre><span class="k">SELECT</span> <span class="o">*</span> <span class="k">FROM</span> <span class="n">customers</span> <span class="k">WHERE</span> <span class="n">name</span> <span class="o">=</span> <span class="s1">'John Doe'</span><span class="p">;</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
 
 <h3 id="35-avoid-excessive-indexes">3.5 Avoid Excessive Indexes</h3>
 <p>While indexes optimize <code class="language-plaintext highlighter-rouge">SELECT</code> queries, too many indexes can negatively impact <code class="language-plaintext highlighter-rouge">INSERTs</code>, <code class="language-plaintext highlighter-rouge">UPDATEs</code>, and <code class="language-plaintext highlighter-rouge">DELETEs</code>, as the database needs to update the indexes with each data change.</p>
