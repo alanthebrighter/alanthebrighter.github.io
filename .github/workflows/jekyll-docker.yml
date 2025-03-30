@@ -23,7 +23,9 @@ jobs:
         ruby-version: '3.2.0'
 
     - name: Install Bundler
-      run: gem install bundler
+      run: |
+        gem install bundler
+        bundler -v  # Verify bundler version
 
     - name: Install dependencies
       run: bundle install
