@@ -17,7 +17,7 @@ end
 platforms :mingw, :x64_mingw, :mswin, :jruby do
   gem "tzinfo", ">= 1", "< 3"
   gem "tzinfo-data", "~> 1.2024.1" # Specify the version here
-  #gem "wdm", "~> 0.1.1"
+  gem "wdm", "~> 0.1.1"
   gem "listen", "~> 3.8.0"
 end
 
