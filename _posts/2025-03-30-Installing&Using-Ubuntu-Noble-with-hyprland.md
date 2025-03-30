@@ -54,9 +54,8 @@ Hyprland
 
 
 ### Changing mouse/mice sensitivity
-SUPER + SHIFT + E (KooL Hyprland settings menu)
-View/Edit user settings
-Change 
+SUPER + SHIFT + E (KooL Hyprland settings menu) -> View/Edit user settings  
+**Change**  
 {% highlight ruby %}
 general {
   sensitivity=.285 # This one
