@@ -16,18 +16,56 @@ This script simplifies the installation process, configuring everything from ess
 
 ## 💬 Some useful shortcuts
 
-| Key Combination             | Action                                     |
-|-----------------------------|--------------------------------------------|
-| `Super` + `Enter`           | Launch terminal emulator (Kitty)           |
-| `Super` + `D`               | Launch application launcher (Rofi)         |
-| `Super` + `Q`               | Close active/focused window                |
-| `Super` + `Shift` + `E`     | Open KooL Hyprland Settings                |
-| `Super` + `E`               | Launch file manager (Thunar)               |
-| `Super` + `Shift` + `F`     | Toggle fullscreen for the active window    |
-| `Super` + `Spacebar`        | Toggle floating mode for the active window |
-| `Super` + `Alt` + `Spacebar`| Toggle floating mode for all windows       |
-| `Super` + `H`               | Launch help file with keybinding hints     |
-| `Super` + `Shift` + `K`     | Search configured keybindings via Rofi     |
+<table>
+  <thead>
+    <tr>
+      <th>Key Combination</th>
+      <th>Action</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Super + Enter</td>
+      <td>Launch terminal emulator (Kitty)</td>
+    </tr>
+    <tr>
+      <td>Super + D</td>
+      <td>Launch application launcher (Rofi)</td>
+    </tr>
+    <tr>
+      <td>Super + Q</td>
+      <td>Close active/focused window</td>
+    </tr>
+    <tr>
+      <td>Super + Shift + E</td>
+      <td>Open KooL Hyprland Settings</td>
+    </tr>
+    <tr>
+      <td>Super + E</td>
+      <td>Launch file manager (Thunar)</td>
+    </tr>
+    <tr>
+      <td>Super + Shift + F</td>
+      <td>Toggle fullscreen for the active window</td>
+    </tr>
+    <tr>
+      <td>Super + Spacebar</td>
+      <td>Toggle floating mode for the active window</td>
+    </tr>
+    <tr>
+      <td>Super + Alt + Spacebar</td>
+      <td>Toggle floating mode for all windows</td>
+    </tr>
+    <tr>
+      <td>Super + H</td>
+      <td>Launch help file with keybinding hints</td>
+    </tr>
+    <tr>
+      <td>Super + Shift + K</td>
+      <td>Search configured keybindings via Rofi</td>
+    </tr>
+  </tbody>
+</table>
 
 For a complete list of shortcuts and further information: [Keybinds section of JaKooLit's Hyprland-Dots Wiki](https://github.com/JaKooLit/Hyprland-Dots/wiki/Keybinds).
 
