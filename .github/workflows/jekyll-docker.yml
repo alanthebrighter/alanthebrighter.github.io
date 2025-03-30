@@ -8,49 +8,43 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+
     permissions:
-      contents: write
-      pages: write
-      id-token: write  # Necessário para OIDC
+      contents: write  # This allows write access to the repository contents
+      pages: write     # This allows write access to GitHub Pages
 
     steps:
     - name: Checkout repository
-      uses: actions/checkout@v3
+      uses: actions/checkout@v2
 
     - name: Set up Ruby
       uses: ruby/setup-ruby@v1
       with:
-        ruby-version: '3.1.4'
-        bundler: '2.4.22'
+        ruby-version: '3.2.0'
 
-    - name: Setup Node.js
-      uses: actions/setup-node@v3
-      with:
-        node-version: '18.x'
+    - name: Install Bundler
+      run: |
+        gem install bundler:2.5.6  # Specify a compatible version of Bundler
+        bundler -v  # Verify bundler version
 
-    - name: Cache dependencies
-      uses: actions/cache@v3
+    - name: Cache Ruby gems
+      uses: actions/cache@v3  # Updated version
       with:
-        path: |
-          vendor/bundle
-          ~/.gem
-          tmp/cache
-        key: ${{ runner.os }}-${{ hashFiles('**/Gemfile.lock') }}
+        path: vendor/bundle
+        key: ${{ runner.os }}-gems-${{ hashFiles('**/Gemfile.lock') }}
         restore-keys: |
-          ${{ runner.os }}-
+          ${{ runner.os }}-gems-
 
     - name: Install dependencies
-      run: |
-        bundle config path vendor/bundle
-        bundle install --jobs 4 --retry 3
+      run: bundle install --verbose  # Enable verbose logging
 
-    - name: Build with Jekyll
-      run: |
-        JEKYLL_ENV=production bundle exec jekyll build --trace
+    - name: Build Jekyll site
+      run: bundle exec jekyll build
 
     - name: Deploy to GitHub Pages
       uses: peaceiris/actions-gh-pages@v3
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ./_site
-        full_commit_message: "Deploy via GitHub Actions $(date '+%Y-%m-%d %H:%M:%S')"
+        publish_dir: './_site'
+        user_name: 'github-actions'
+        user_email: 'github-actions@github.com'
