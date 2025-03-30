@@ -43,7 +43,8 @@ However, this morning, I encountered another issue: after suspending my system, 
 To resolve this, I used the following key combinations:  
 
 - **CTRL + ALT + F3** (switch to a TTY terminal)  
-- **CTRL + ALT + F2** (to access another terminal if needed)  
+- **CTRL + ALT + F2** (to access another terminal if needed)
+- Nevermind, i just needed to press **ALT + TAB**, to start typing my password. (I'm learning, calm down).
 
 From there, I logged in with my username and password and manually started Hyprland by running:  
 
