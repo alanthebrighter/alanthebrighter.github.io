@@ -1,9 +1,96 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator><link href="https://alanthebrighter.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://alanthebrighter.github.io/" rel="alternate" type="text/html" /><updated>2025-03-30T13:22:49+00:00</updated><id>https://alanthebrighter.github.io/feed.xml</id><title type="html">Brighter Spot</title><subtitle>Blog documentations.</subtitle><entry><title type="html">DOC: Installing and Using Hyprland on Ubuntu</title><link href="https://alanthebrighter.github.io/posts/UbuntuHyprland" rel="alternate" type="text/html" title="DOC: Installing and Using Hyprland on Ubuntu" /><published>2025-03-30T12:56:30+00:00</published><updated>2025-03-30T12:56:30+00:00</updated><id>https://alanthebrighter.github.io/posts/Installing&amp;Using-Ubuntu-Noble-with-hyprland</id><content type="html" xml:base="https://alanthebrighter.github.io/posts/UbuntuHyprland"><![CDATA[<p>Setting Up Ubuntu Noble 24.04 LTS with Hyprland Using <a href="https://github.com/JaKooLit/Ubuntu-Hyprland">JaKooLit’s Scrip</a>.<br />
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator><link href="https://alanthebrighter.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://alanthebrighter.github.io/" rel="alternate" type="text/html" /><updated>2025-03-30T13:37:03+00:00</updated><id>https://alanthebrighter.github.io/feed.xml</id><title type="html">Brighter Spot</title><subtitle>Blog documentations.</subtitle><entry><title type="html">DOC: Installing and Using Hyprland on Ubuntu</title><link href="https://alanthebrighter.github.io/posts/UbuntuHyprland" rel="alternate" type="text/html" title="DOC: Installing and Using Hyprland on Ubuntu" /><published>2025-03-30T12:56:30+00:00</published><updated>2025-03-30T12:56:30+00:00</updated><id>https://alanthebrighter.github.io/posts/Installing&amp;Using-Ubuntu-Noble-with-hyprland</id><content type="html" xml:base="https://alanthebrighter.github.io/posts/UbuntuHyprland"><![CDATA[<p>Setting Up Ubuntu Noble 24.04 LTS with Hyprland Using <a href="https://github.com/JaKooLit/Ubuntu-Hyprland">JaKooLit’s Scrip</a>.<br />
 Ubuntu Noble 24.04 LTS is the latest long-term support release, offering stability and performance. If you’re looking for a sleek, highly customizable window manager, Hyprland is a fantastic choice.<br />
 In this guide, I’ll walk you through my experience setting up Ubuntu 24.04 with Hyprland using JaKooLit’s automated script.<br />
 This script simplifies the installation process, configuring everything from essential dependencies to a well-optimized Hyprland environment. Whether you’re a beginner or an experienced Linux user, this setup will help you achieve a modern, stylish, and efficient desktop experience.</p>
 
-<p><img src="https://github.com/user-attachments/assets/a53b8e51-6bd4-465c-85ec-5a196c059e50" alt="image" /></p>]]></content><author><name></name></author><category term="Linux" /><category term="Ubuntu" /><category term="Hyprland" /><category term="wayland" /><category term="Hyprdots" /><category term="Tyling compositor" /><summary type="html"><![CDATA[Installing Hyprland on Ubuntu 24.04 LTS Noble 24.04 LTS]]></summary></entry><entry><title type="html">DOC: SQL Query Optimization</title><link href="https://alanthebrighter.github.io/posts/SQL-Query-Optimization" rel="alternate" type="text/html" title="DOC: SQL Query Optimization" /><published>2025-03-24T06:39:17+00:00</published><updated>2025-03-24T06:39:17+00:00</updated><id>https://alanthebrighter.github.io/posts/SQL-Queries-Tuning</id><content type="html" xml:base="https://alanthebrighter.github.io/posts/SQL-Query-Optimization"><![CDATA[<p>SQL query optimization is an essential process for improving database performance, ensuring more efficient query execution and resource usage. This document presents fundamental concepts, practical techniques, and examples for SQL query optimization.</p>
+<p><img src="https://github.com/user-attachments/assets/a53b8e51-6bd4-465c-85ec-5a196c059e50" alt="image" /></p>
+
+<h2 id="-some-useful-shortcuts">💬 Some useful shortcuts</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Key Combination</th>
+      <th>Action</th>
+      <th> </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">Super</code> + <code class="language-plaintext highlighter-rouge">Enter</code></td>
+      <td>Launch terminal emulator (Kitty)</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">Super</code> + <code class="language-plaintext highlighter-rouge">D</code></td>
+      <td>Launch application launcher (Rofi)</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">Super</code> + <code class="language-plaintext highlighter-rouge">Q</code></td>
+      <td>Close active/focused window</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">Super</code> + <code class="language-plaintext highlighter-rouge">Shift</code> + <code class="language-plaintext highlighter-rouge">E</code></td>
+      <td>Open KooL Hyprland Settings</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">Super</code> + <code class="language-plaintext highlighter-rouge">E</code></td>
+      <td>Launch file manager (Thunar)</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">Super</code> + <code class="language-plaintext highlighter-rouge">Shift</code> + <code class="language-plaintext highlighter-rouge">F</code></td>
+      <td>Toggle fullscreen for the active window</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">Super</code> + <code class="language-plaintext highlighter-rouge">Spacebar</code></td>
+      <td>Toggle floating mode for the active window</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">Super</code> + <code class="language-plaintext highlighter-rouge">Alt</code> + <code class="language-plaintext highlighter-rouge">Spacebar</code></td>
+      <td>Toggle floating mode for all windows</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">Super</code> + <code class="language-plaintext highlighter-rouge">H</code></td>
+      <td>Launch help file with keybinding hints</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">Super</code> + <code class="language-plaintext highlighter-rouge">Shift</code> + <code class="language-plaintext highlighter-rouge">K</code></td>
+      <td>Search configured keybindings via Rofi</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+<p>For a complete list of shortcuts and further information: <a href="https://github.com/JaKooLit/Hyprland-Dots/wiki/Keybinds">Keybinds section of JaKooLit’s Hyprland-Dots Wiki</a>.</p>
+
+<h2 id="-some-useful-tips">💬 Some useful tips</h2>
+<h3 id="recovering-ubuntu-and-windows-boot-issues--hyprland-login-tip">Recovering Ubuntu and Windows Boot Issues + Hyprland Login Tip</h3>
+
+<p>Recently, I encountered some issues while trying to restore GRUB to recognize both Ubuntu and Windows. The problem started when Windows failed to create the EFI partition correctly. In an attempt to fix it, I booted from a Windows USB recovery drive. However, after that, when I tried to return to Ubuntu, it would start booting, but the screen would go black, and my monitor would display a “no signal” message.</p>
+
+<p>Not knowing what to do, I decided to format Ubuntu and reinstall everything from scratch using the <a href="https://github.com/JaKooLit/Ubuntu-Hyprland">JaKooLit Hyprland setup script</a>.</p>
+
+<p>However, this morning, I encountered another issue: after suspending my system, it prompted me for a password upon waking up. No matter what I pressed, I couldn’t type my password or exit the lock screen.</p>
+
+<p>To resolve this, I used the following key combinations:</p>
+
+<ul>
+  <li><strong>CTRL + ALT + F3</strong> (switch to a TTY terminal)</li>
+  <li><strong>CTRL + ALT + F2</strong> (to access another terminal if needed)</li>
+</ul>
+
+<p>From there, I logged in with my username and password and manually started Hyprland by running:</p>
+
+<p>```sh
+Hyprland</p>]]></content><author><name></name></author><category term="Linux" /><category term="Ubuntu" /><category term="Hyprland" /><category term="wayland" /><category term="Hyprdots" /><category term="Tyling compositor" /><summary type="html"><![CDATA[Installing Hyprland on Ubuntu 24.04 LTS Noble 24.04 LTS]]></summary></entry><entry><title type="html">DOC: SQL Query Optimization</title><link href="https://alanthebrighter.github.io/posts/SQL-Query-Optimization" rel="alternate" type="text/html" title="DOC: SQL Query Optimization" /><published>2025-03-24T06:39:17+00:00</published><updated>2025-03-24T06:39:17+00:00</updated><id>https://alanthebrighter.github.io/posts/SQL-Queries-Tuning</id><content type="html" xml:base="https://alanthebrighter.github.io/posts/SQL-Query-Optimization"><![CDATA[<p>SQL query optimization is an essential process for improving database performance, ensuring more efficient query execution and resource usage. This document presents fundamental concepts, practical techniques, and examples for SQL query optimization.</p>
 
 <hr />
 
