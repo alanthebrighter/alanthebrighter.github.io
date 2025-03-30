@@ -16,7 +16,29 @@ This script simplifies the installation process, configuring everything from ess
 
 ## 💬 Some useful shortcuts
 
-<table>
+<style>
+  .custom-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  .custom-table th, .custom-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  .custom-table th {
+    background-color: #f2f2f2;
+    color: #333;
+    text-align: left;
+  }
+  .custom-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  .custom-table tr:hover {
+    background-color: #f1f1f1;
+  }
+</style>
+
+<table class="custom-table">
   <thead>
     <tr>
       <th>Key Combination</th>
