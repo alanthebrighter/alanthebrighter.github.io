@@ -9,6 +9,8 @@ gem "minima", "~> 2.5"
 # Plugins
 group :jekyll_plugins do
   gem "jekyll-feed", "~> 0.12"
+  gem 'kramdown-parser-gfm'
+  gem 'jekyll-relative-links'
 end
 
 # Windows-specific gems
