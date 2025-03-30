@@ -44,9 +44,23 @@ To resolve this, I used the following key combinations:
 
 - **CTRL + ALT + F3** (switch to a TTY terminal)  
 - **CTRL + ALT + F2** (to access another terminal if needed)
-- Nevermind, i just needed to press **ALT + TAB**, to start typing my password. (I'm learning, calm down).
+- Nevermind, i just needed to press **ALT + TAB**, to start typing my password. (I'm learning, calm down.)
 
 From there, I logged in with my username and password and manually started Hyprland by running:  
 
-```sh
-Hyprland
+ {% highlight ruby %} Hyprland {% endhighlight % }
+
+
+### Changing mouse/mice sensitivity
+SUPER + SHIFT + E (KooL Hyprland settings menu)
+View/Edit user settings
+Change {% highlight ruby %}
+general {
+  sensitivity=.285 # This one
+  apply_sens_to_raw=0 # This one is for acceleration, I think.
+  resize_on_border = true
+
+  layout = dwindle
+} 
+{% endhighlight % }
+
