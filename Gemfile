@@ -21,9 +21,6 @@ platforms :mingw, :x64_mingw, :mswin, :jruby do
   gem "listen", "~> 3.8.0"
 end
 
-# Performance-booster for watching directories on Windows
-# (Already included in the platforms block above, so no need to repeat)
-
 # Lock `http_parser.rb` gem to `v0.6.x` on JRuby builds
 gem "http_parser.rb", "~> 0.6.0", :platforms => [:jruby]
 
