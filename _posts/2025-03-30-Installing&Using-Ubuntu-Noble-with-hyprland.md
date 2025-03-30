@@ -13,3 +13,39 @@ This script simplifies the installation process, configuring everything from ess
 
 
 ![image](https://github.com/user-attachments/assets/a53b8e51-6bd4-465c-85ec-5a196c059e50)
+
+## 💬 Some useful shortcuts
+
+| Key Combination             | Action                                     |
+|-----------------------------|--------------------------------------------|
+| `Super` + `Enter`           | Launch terminal emulator (Kitty)           |
+| `Super` + `D`               | Launch application launcher (Rofi)         |
+| `Super` + `Q`               | Close active/focused window                |
+| `Super` + `Shift` + `E`     | Open KooL Hyprland Settings                |
+| `Super` + `E`               | Launch file manager (Thunar)               |
+| `Super` + `Shift` + `F`     | Toggle fullscreen for the active window    |
+| `Super` + `Spacebar`        | Toggle floating mode for the active window |
+| `Super` + `Alt` + `Spacebar`| Toggle floating mode for all windows       |
+| `Super` + `H`               | Launch help file with keybinding hints     |
+| `Super` + `Shift` + `K`     | Search configured keybindings via Rofi     |
+
+For a complete list of shortcuts and further information: [Keybinds section of JaKooLit's Hyprland-Dots Wiki](https://github.com/JaKooLit/Hyprland-Dots/wiki/Keybinds).
+
+## 💬 Some useful tips
+### Recovering Ubuntu and Windows Boot Issues + Hyprland Login Tip  
+
+Recently, I encountered some issues while trying to restore GRUB to recognize both Ubuntu and Windows. The problem started when Windows failed to create the EFI partition correctly. In an attempt to fix it, I booted from a Windows USB recovery drive. However, after that, when I tried to return to Ubuntu, it would start booting, but the screen would go black, and my monitor would display a "no signal" message.  
+
+Not knowing what to do, I decided to format Ubuntu and reinstall everything from scratch using the [JaKooLit Hyprland setup script](https://github.com/JaKooLit/Ubuntu-Hyprland).  
+
+However, this morning, I encountered another issue: after suspending my system, it prompted me for a password upon waking up. No matter what I pressed, I couldn't type my password or exit the lock screen.  
+
+To resolve this, I used the following key combinations:  
+
+- **CTRL + ALT + F3** (switch to a TTY terminal)  
+- **CTRL + ALT + F2** (to access another terminal if needed)  
+
+From there, I logged in with my username and password and manually started Hyprland by running:  
+
+```sh
+Hyprland
