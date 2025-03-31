@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator><link href="https://alanthebrighter.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://alanthebrighter.github.io/" rel="alternate" type="text/html" /><updated>2025-03-30T23:59:58+00:00</updated><id>https://alanthebrighter.github.io/feed.xml</id><title type="html">Brighter Spot</title><subtitle>Blog documentations.</subtitle><entry><title type="html">DOC: Installing and Using Hyprland on Ubuntu</title><link href="https://alanthebrighter.github.io/posts/UbuntuHyprland" rel="alternate" type="text/html" title="DOC: Installing and Using Hyprland on Ubuntu" /><published>2025-03-30T12:56:30+00:00</published><updated>2025-03-30T12:56:30+00:00</updated><id>https://alanthebrighter.github.io/posts/Installing&amp;Using-Ubuntu-Noble-with-hyprland</id><content type="html" xml:base="https://alanthebrighter.github.io/posts/UbuntuHyprland"><![CDATA[<p>Setting Up Ubuntu Noble 24.04 LTS with Hyprland Using JaKooLit’s Script.<br />
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator><link href="https://alanthebrighter.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://alanthebrighter.github.io/" rel="alternate" type="text/html" /><updated>2025-03-31T00:02:57+00:00</updated><id>https://alanthebrighter.github.io/feed.xml</id><title type="html">Brighter Spot</title><subtitle>Blog documentations.</subtitle><entry><title type="html">DOC: Installing and Using Hyprland on Ubuntu</title><link href="https://alanthebrighter.github.io/posts/UbuntuHyprland" rel="alternate" type="text/html" title="DOC: Installing and Using Hyprland on Ubuntu" /><published>2025-03-30T12:56:30+00:00</published><updated>2025-03-30T12:56:30+00:00</updated><id>https://alanthebrighter.github.io/posts/Installing&amp;Using-Ubuntu-Noble-with-hyprland</id><content type="html" xml:base="https://alanthebrighter.github.io/posts/UbuntuHyprland"><![CDATA[<p>Setting Up Ubuntu Noble 24.04 LTS with Hyprland Using JaKooLit’s Script.<br />
 Ubuntu Noble 24.04 LTS is the latest long-term support release, offering stability and performance. If you’re looking for a sleek, highly customizable window manager, Hyprland is a fantastic choice.<br />
 I’ll walk you through my experience setting up Ubuntu 24.04 with Hyprland using JaKooLit’s automated script in this guide.</p>
 
@@ -102,7 +102,8 @@ I’ll walk you through my experience setting up Ubuntu 24.04 with Hyprland usin
 From there, I logged in with my username and password and manually started Hyprland by running:</li>
 </ul>
 
-<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="no">Hyprland</span> </code></pre></figure>
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Hyprland 
+</code></pre></div></div>
 
 <ul>
   <li>Nevermind, i just needed to press <strong>ALT + TAB</strong>, to start typing my password. (I’m learning, calm down.)</li>
@@ -111,14 +112,14 @@ From there, I logged in with my username and password and manually started Hyprl
 <h3 id="changing-mousemice-sensitivity">Changing mouse/mice sensitivity</h3>
 <p>SUPER + SHIFT + E (KooL Hyprland settings menu) -&gt; View/Edit user settings<br />
 <strong>Change</strong></p>
+<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>general {
+  sensitivity=.285 # This one
+  apply_sens_to_raw=0 # This one is for acceleration, I think.
+  resize_on_border = true
 
-<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="n">general</span> <span class="p">{</span>
-  <span class="n">sensitivity</span><span class="o">=.</span><span class="mi">285</span> <span class="c1"># This one</span>
-  <span class="n">apply_sens_to_raw</span><span class="o">=</span><span class="mi">0</span> <span class="c1"># This one is for acceleration, I think.</span>
-  <span class="n">resize_on_border</span> <span class="o">=</span> <span class="kp">true</span>
-
-  <span class="n">layout</span> <span class="o">=</span> <span class="n">dwindle</span>
-<span class="p">}</span> </code></pre></figure>]]></content><author><name></name></author><category term="Linux" /><category term="Ubuntu" /><category term="Hyprland" /><category term="wayland" /><category term="Hyprdots" /><category term="Tyling compositor" /><summary type="html"><![CDATA[Installing Hyprland on Ubuntu 24.04 LTS Noble 24.04 LTS]]></summary></entry><entry><title type="html">DOC: SQL Query Optimization</title><link href="https://alanthebrighter.github.io/posts/SQL-Query-Optimization" rel="alternate" type="text/html" title="DOC: SQL Query Optimization" /><published>2025-03-24T06:39:17+00:00</published><updated>2025-03-24T06:39:17+00:00</updated><id>https://alanthebrighter.github.io/posts/SQL-Queries-Tuning</id><content type="html" xml:base="https://alanthebrighter.github.io/posts/SQL-Query-Optimization"><![CDATA[<p>SQL query optimization is an essential process for improving database performance, ensuring more efficient query execution and resource usage. This document presents fundamental concepts, practical techniques, and examples for SQL query optimization.</p>
+  layout = dwindle
+} 
+</code></pre></div></div>]]></content><author><name></name></author><category term="Linux" /><category term="Ubuntu" /><category term="Hyprland" /><category term="wayland" /><category term="Hyprdots" /><category term="Tyling compositor" /><summary type="html"><![CDATA[Installing Hyprland on Ubuntu 24.04 LTS Noble 24.04 LTS]]></summary></entry><entry><title type="html">DOC: SQL Query Optimization</title><link href="https://alanthebrighter.github.io/posts/SQL-Query-Optimization" rel="alternate" type="text/html" title="DOC: SQL Query Optimization" /><published>2025-03-24T06:39:17+00:00</published><updated>2025-03-24T06:39:17+00:00</updated><id>https://alanthebrighter.github.io/posts/SQL-Queries-Tuning</id><content type="html" xml:base="https://alanthebrighter.github.io/posts/SQL-Query-Optimization"><![CDATA[<p>SQL query optimization is an essential process for improving database performance, ensuring more efficient query execution and resource usage. This document presents fundamental concepts, practical techniques, and examples for SQL query optimization.</p>
 
 <hr />
 
