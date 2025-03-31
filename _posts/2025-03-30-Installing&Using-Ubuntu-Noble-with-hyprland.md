@@ -109,16 +109,16 @@ To resolve this, I used the following key combinations:
 - **CTRL + ALT + F2** (to access another terminal if needed)
 From there, I logged in with my username and password and manually started Hyprland by running:  
 
-{% highlight ruby %}
+```sh
 Hyprland 
-{% endhighlight %}
+```
 
 - Nevermind, i just needed to press **ALT + TAB**, to start typing my password. (I'm learning, calm down.)
 
 ### Changing mouse/mice sensitivity
 SUPER + SHIFT + E (KooL Hyprland settings menu) -> View/Edit user settings  
 **Change**  
-{% highlight ruby %}
+```text
 general {
   sensitivity=.285 # This one
   apply_sens_to_raw=0 # This one is for acceleration, I think.
@@ -126,5 +126,5 @@ general {
 
   layout = dwindle
 } 
-{% endhighlight %}
+```
 
