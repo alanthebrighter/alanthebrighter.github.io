@@ -146,7 +146,7 @@ Customizing Waybar was relatively simple, but there are still some things I want
 I'm also curious about why Steam always opens on workspace 5 and Chrome on workspace 2. If I try to move it from there, it starts bugging out and constantly switching workspaces whenever I hover over the menus. I'm not sure if this is a bug with the application or with Hyprland. Additionally, several other visual glitches occur frequently. They are not annoying enough to stop me from using Hyprland, but I still want to see if it's possible to fix them. 
 
 ### Workspace Memory Feature  
-I think it would be interesting if every time an application is opened, it remembers which workspace I was on at the moment of launch and continues to open in that workspace instead of the current one, preventing it from opening in the background on another workspace. This would help keep applications in their expected places rather than shifting unexpectedly.  
+I think it would be interesting if every time an application is opened, it remembers the workspace where I placed it and continues to open in that workspace, even if I switch to another one in the meantime. This way, the application would not pop up in my current workspace, disrupting my workflow. Instead, it would open in the background in the designated workspace, allowing me to continue working smoothly and check on it later when needed.  
 
 ![image](https://github.com/user-attachments/assets/a8a26566-8db5-4ced-8260-c72c0686fa90)  
 
