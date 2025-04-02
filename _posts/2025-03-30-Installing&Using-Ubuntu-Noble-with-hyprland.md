@@ -123,8 +123,27 @@ general {
   sensitivity=.285 # This one
   apply_sens_to_raw=0 # This one is for acceleration, I think.
   resize_on_border = true
-
   layout = dwindle
 } 
 ```
+## Waybar, Kitty, Oh-My-Zsh, Fastfetch  
+
+I spent some time customizing Hyprland, Waybar, terminal (Kitty/Zsh), and I learned some pretty interesting things along the way.  
+
+### Fastfetch  
+I wanted to modify the Fastfetch configuration to display a custom image, inspired by **@DIMFLIX** and his **hyperdots meowrch**. It seemed simple, but I got lost for almost two hours before figuring out what was happening. In the end, I made it work!  
+
+### Zsh & Kitty  
+Besides Fastfetch, I also wanted to change the terminal theme. While exploring **hyperdots**, I remembered that `SUPER + SHIFT + E` brings up a lot of configurations, including themes for Kitty. Kitty already has a wide variety of themes, but I wanted to create my own.  
+I navigated to the Kitty themes folder, copied a **template**, and started modifying the colors. The result? **It broke everything!** 😂 Nothing new, haha. But then I used another theme from the folder as a base, and this time it worked without issues.  
+
+However, my Zsh still looked a bit dull for my taste. I searched for some themes and remembered that many I used in the past were for **Oh-My-Posh** and **Fish**. In the end, I picked a simple theme called **"Ultima"**—basic but clean.  
+
+### Waybar  
+Customizing Waybar was relatively simple, but there are still some things I want to tweak. Right now, I'm switching between random dark and light themes every time I click the theme switch button. In the future, I plan to modify the color scheme and decide whether the entire bar should be solid or just the icon areas, keeping the rest transparent. I haven't experimented with this yet, but it's something I want to try.  
+
+![image](https://github.com/user-attachments/assets/a8a26566-8db5-4ced-8260-c72c0686fa90)  
+
+For now, that's all! I still want to tweak/create many configurations for Hyprland. I'm learning more about how it works, how **Linux** works, and exploring **@JaKooLit**'s Hyprland setup.
+
 
