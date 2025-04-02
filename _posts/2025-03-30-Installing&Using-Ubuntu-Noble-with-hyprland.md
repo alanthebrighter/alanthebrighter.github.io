@@ -148,8 +148,16 @@ I'm also curious about why Steam always opens on workspace 5 and Chrome on works
 ### Workspace Memory Feature  
 I think it would be interesting if every time an application is opened, it remembers the workspace where I placed it and continues to open in that workspace, even if I switch to another one in the meantime. This way, the application would not pop up in my current workspace, disrupting my workflow. Instead, it would open in the background in the designated workspace, allowing me to continue working smoothly and check on it later when needed.  
 
+### Floating Pop-ups & Chrome Behavior  
+I still haven't figured out why some applications open in floating pop-up mode on the screen. For example, the calculator doesn't always need to be centered as a pop-up, since it can sometimes block information from another application that I'm trying to sum up. Additionally, Chrome always opens on **workspace 2**, and even when it's moved to **workspace 1**, its pop-ups still appear on **workspace 2**. I don't know if this is a Hyprland issue or just how these applications behave by default, but I'd like to understand if there's a way to fix this.  
+
+### Startup Configuration Goals  
+I want to set specific applications to open in predefined workspaces on startup without breaking any other configurations:  
+- **Chrome** should open where I last left it, preferably in **workspace 1**.  
+- **Station** (my web app manager for WhatsApp Web and Instagram) should always start in **workspace 3**.  
+- **Zen Browser** (which I'm currently using to access Notion) should always launch in **workspace 2**.  
+This way, I can ensure my workflow remains smooth, and applications don’t randomly open in unexpected places.  
+
 ![image](https://github.com/user-attachments/assets/a8a26566-8db5-4ced-8260-c72c0686fa90)  
 
 For now, that's all! I still want to tweak/create many configurations for Hyprland. I'm learning more about how it works, how **Linux** works, and exploring **@JaKooLit**'s Hyprland setup.
-
-
