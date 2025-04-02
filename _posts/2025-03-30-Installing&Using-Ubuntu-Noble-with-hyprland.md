@@ -156,7 +156,10 @@ I want to set specific applications to open in predefined workspaces on startup 
 - **Chrome** should open where I last left it, preferably in **workspace 1**.  
 - **Station** (my web app manager for WhatsApp Web and Instagram) should always start in **workspace 3**.  
 - **Zen Browser** (which I'm currently using to access Notion) should always launch in **workspace 2**.  
-This way, I can ensure my workflow remains smooth, and applications don’t randomly open in unexpected places.  
+This way, I can ensure my workflow remains smooth, and applications don’t randomly open in unexpected places.
+
+### The Mysterious Missing Calendar 
+I'm also very curious about where my calendar has disappeared to. I can't find it anywhere, and I even created a shortcut to open it, but it's still nowhere to be found!  
 
 ![image](https://github.com/user-attachments/assets/a8a26566-8db5-4ced-8260-c72c0686fa90)  
 
