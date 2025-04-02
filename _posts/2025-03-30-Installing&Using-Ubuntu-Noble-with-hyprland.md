@@ -143,7 +143,7 @@ However, my Zsh still looked a bit dull for my taste. I searched for some themes
 Customizing Waybar was relatively simple, but there are still some things I want to tweak. Right now, I'm switching between random dark and light themes every time I click the theme switch button. In the future, I plan to modify the color scheme and decide whether the entire bar should be solid or just the icon areas, keeping the rest transparent. I haven't experimented with this yet, but it's something I want to try.  
 
 ### Steam & Hyprland Bugs  
-I'm also curious about why Steam always opens on workspace 5. If I try to move it from there, it starts bugging out and constantly switching workspaces whenever I hover over the menus. I'm not sure if this is a bug with the application or with Hyprland. Additionally, there are several other visual glitches that occur frequently. They are not annoying enough to stop me from using Hyprland, but I still want to see if it's possible to fix them.  
+I'm also curious about why Steam always opens on workspace 5, and Chrome on workspace 2. If I try to move it from there, it starts bugging out and constantly switching workspaces whenever I hover over the menus. I'm not sure if this is a bug with the application or with Hyprland. Additionally, there are several other visual glitches that occur frequently. They are not annoying enough to stop me from using Hyprland, but I still want to see if it's possible to fix them.  
 
 ![image](https://github.com/user-attachments/assets/a8a26566-8db5-4ced-8260-c72c0686fa90)  
 
