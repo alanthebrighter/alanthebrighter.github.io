@@ -15,7 +15,7 @@ This script simplifies the installation process, configuring everything from ess
 [JaKooLit's Script](https://github.com/JaKooLit/Ubuntu-Hyprland)
 
 
-![image](https://github.com/user-attachments/assets/a53b8e51-6bd4-465c-85ec-5a196c059e50)
+![Desktop day 01](https://github.com/user-attachments/assets/a53b8e51-6bd4-465c-85ec-5a196c059e50)
 
 ## 💬 Some useful shortcuts
 
@@ -161,3 +161,6 @@ This way, I can ensure my workflow remains smooth, and applications don’t rand
 ![image](https://github.com/user-attachments/assets/a8a26566-8db5-4ced-8260-c72c0686fa90)  
 
 For now, that's all! I still want to tweak/create many configurations for Hyprland. I'm learning more about how it works, how **Linux** works, and exploring **@JaKooLit**'s Hyprland setup.
+
+![Desktop day 4](https://github.com/user-attachments/assets/03590393-17ee-4d56-ab14-20ddf8ee5ac2)
+
