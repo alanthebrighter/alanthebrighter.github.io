@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator><link href="https://alanthebrighter.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://alanthebrighter.github.io/" rel="alternate" type="text/html" /><updated>2025-04-02T17:44:06+00:00</updated><id>https://alanthebrighter.github.io/feed.xml</id><title type="html">Brighter Spot</title><subtitle>Blog documentations.</subtitle><entry><title type="html">DOC: Installing and Using Hyprland on Ubuntu</title><link href="https://alanthebrighter.github.io/posts/UbuntuHyprland" rel="alternate" type="text/html" title="DOC: Installing and Using Hyprland on Ubuntu" /><published>2025-03-30T12:56:30+00:00</published><updated>2025-03-30T12:56:30+00:00</updated><id>https://alanthebrighter.github.io/posts/Installing&amp;Using-Ubuntu-Noble-with-hyprland</id><content type="html" xml:base="https://alanthebrighter.github.io/posts/UbuntuHyprland"><![CDATA[<p>Setting Up Ubuntu Noble 24.04 LTS with Hyprland Using JaKooLit’s Script.<br />
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator><link href="https://alanthebrighter.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://alanthebrighter.github.io/" rel="alternate" type="text/html" /><updated>2025-04-02T17:51:47+00:00</updated><id>https://alanthebrighter.github.io/feed.xml</id><title type="html">Brighter Spot</title><subtitle>Blog documentations.</subtitle><entry><title type="html">DOC: Installing and Using Hyprland on Ubuntu</title><link href="https://alanthebrighter.github.io/posts/UbuntuHyprland" rel="alternate" type="text/html" title="DOC: Installing and Using Hyprland on Ubuntu" /><published>2025-03-30T12:56:30+00:00</published><updated>2025-03-30T12:56:30+00:00</updated><id>https://alanthebrighter.github.io/posts/Installing&amp;Using-Ubuntu-Noble-with-hyprland</id><content type="html" xml:base="https://alanthebrighter.github.io/posts/UbuntuHyprland"><![CDATA[<p>Setting Up Ubuntu Noble 24.04 LTS with Hyprland Using JaKooLit’s Script.<br />
 Ubuntu Noble 24.04 LTS is the latest long-term support release, offering stability and performance. If you’re looking for a sleek, highly customizable window manager, Hyprland is a fantastic choice.<br />
 I’ll walk you through my experience setting up Ubuntu 24.04 with Hyprland using JaKooLit’s automated script in this guide.</p>
 
@@ -140,6 +140,18 @@ I navigated to the Kitty themes folder, copied a <strong>template</strong>, and 
 
 <h3 id="workspace-memory-feature">Workspace Memory Feature</h3>
 <p>I think it would be interesting if every time an application is opened, it remembers the workspace where I placed it and continues to open in that workspace, even if I switch to another one in the meantime. This way, the application would not pop up in my current workspace, disrupting my workflow. Instead, it would open in the background in the designated workspace, allowing me to continue working smoothly and check on it later when needed.</p>
+
+<h3 id="floating-pop-ups--chrome-behavior">Floating Pop-ups &amp; Chrome Behavior</h3>
+<p>I still haven’t figured out why some applications open in floating pop-up mode on the screen. For example, the calculator doesn’t always need to be centered as a pop-up, since it can sometimes block information from another application that I’m trying to sum up. Additionally, Chrome always opens on <strong>workspace 2</strong>, and even when it’s moved to <strong>workspace 1</strong>, its pop-ups still appear on <strong>workspace 2</strong>. I don’t know if this is a Hyprland issue or just how these applications behave by default, but I’d like to understand if there’s a way to fix this.</p>
+
+<h3 id="startup-configuration-goals">Startup Configuration Goals</h3>
+<p>I want to set specific applications to open in predefined workspaces on startup without breaking any other configurations:</p>
+<ul>
+  <li><strong>Chrome</strong> should open where I last left it, preferably in <strong>workspace 1</strong>.</li>
+  <li><strong>Station</strong> (my web app manager for WhatsApp Web and Instagram) should always start in <strong>workspace 3</strong>.</li>
+  <li><strong>Zen Browser</strong> (which I’m currently using to access Notion) should always launch in <strong>workspace 2</strong>.<br />
+This way, I can ensure my workflow remains smooth, and applications don’t randomly open in unexpected places.</li>
+</ul>
 
 <p><img src="https://github.com/user-attachments/assets/a8a26566-8db5-4ced-8260-c72c0686fa90" alt="image" /></p>
 
