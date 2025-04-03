@@ -144,9 +144,10 @@ Customizing Waybar was relatively simple, but there are still some things I want
 
 I also found out how to display the calendar by hovering over the Waybar! I just added it to the same section where the clock is displayed.  
 
-
 ### Steam & Hyprland Bugs  
-I'm also curious about why Steam always opens on workspace 5 and Chrome on workspace 2. If I try to move it from there, it starts bugging out and constantly switching workspaces whenever I hover over the menus. I'm not sure if this is a bug with the application or with Hyprland. Additionally, several other visual glitches occur frequently. They are not annoying enough to stop me from using Hyprland, but I still want to see if it's possible to fix them. 
+I'm also curious about why Steam always opens on workspace 5. If I try to move it from there, it starts bugging out and constantly switching workspaces whenever I hover over the menus. I'm not sure if this is a bug with the application or with Hyprland. Additionally, there are several other visual glitches that occur frequently. They are not annoying enough to stop me from using Hyprland, but I still want to see if it's possible to fix them. 
+
+Today, I updated my Hyprland configuration to try to fix some of these strange glitches, like random parts of the desktop appearing suddenly and other visual bugs. I don’t know yet if it worked, so if the problem persists, I’ll need to research more about it.
 
 ### Workspace Memory Feature  
 I think it would be interesting if every time an application is opened, it remembers the workspace where I placed it and continues to open in that workspace, even if I switch to another one in the meantime. This way, the application would not pop up in my current workspace, disrupting my workflow. Instead, it would open in the background in the designated workspace, allowing me to continue working smoothly and check on it later when needed.  
@@ -161,10 +162,10 @@ I want to set specific applications to open in predefined workspaces on startup 
 - **Zen Browser** (which I'm currently using to access Notion) should always launch in **workspace 2**.  
 This way, I can ensure my workflow remains smooth, and applications don’t randomly open in unexpected places.
 
-
 ![image](https://github.com/user-attachments/assets/a8a26566-8db5-4ced-8260-c72c0686fa90)  
 
 For now, that's all! I still want to tweak/create many configurations for Hyprland. I'm learning more about how it works, how **Linux** works, and exploring **@JaKooLit**'s Hyprland setup.
 
 ![Desktop day 4](https://github.com/user-attachments/assets/03590393-17ee-4d56-ab14-20ddf8ee5ac2)
+
 
