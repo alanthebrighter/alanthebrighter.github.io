@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator><link href="https://alanthebrighter.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://alanthebrighter.github.io/" rel="alternate" type="text/html" /><updated>2025-04-03T22:26:08+00:00</updated><id>https://alanthebrighter.github.io/feed.xml</id><title type="html">Brighter Spot</title><subtitle>Blog documentations.</subtitle><entry><title type="html">DOC: Installing and Using Hyprland on Ubuntu</title><link href="https://alanthebrighter.github.io/posts/UbuntuHyprland" rel="alternate" type="text/html" title="DOC: Installing and Using Hyprland on Ubuntu" /><published>2025-03-30T12:56:30+00:00</published><updated>2025-03-30T12:56:30+00:00</updated><id>https://alanthebrighter.github.io/posts/Installing&amp;Using-Ubuntu-Noble-with-hyprland</id><content type="html" xml:base="https://alanthebrighter.github.io/posts/UbuntuHyprland"><![CDATA[<p>Setting Up Ubuntu Noble 24.04 LTS with Hyprland Using JaKooLit’s Script.<br />
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator><link href="https://alanthebrighter.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://alanthebrighter.github.io/" rel="alternate" type="text/html" /><updated>2025-04-06T16:29:28+00:00</updated><id>https://alanthebrighter.github.io/feed.xml</id><title type="html">Brighter Spot</title><subtitle>Blog documentations.</subtitle><entry><title type="html">DOC: Installing and Using Hyprland on Ubuntu</title><link href="https://alanthebrighter.github.io/posts/UbuntuHyprland" rel="alternate" type="text/html" title="DOC: Installing and Using Hyprland on Ubuntu" /><published>2025-03-30T12:56:30+00:00</published><updated>2025-03-30T12:56:30+00:00</updated><id>https://alanthebrighter.github.io/posts/Installing&amp;Using-Ubuntu-Noble-with-hyprland</id><content type="html" xml:base="https://alanthebrighter.github.io/posts/UbuntuHyprland"><![CDATA[<p>Setting Up Ubuntu Noble 24.04 LTS with Hyprland Using JaKooLit’s Script.<br />
 Ubuntu Noble 24.04 LTS is the latest long-term support release, offering stability and performance. If you’re looking for a sleek, highly customizable window manager, Hyprland is a fantastic choice.<br />
 I’ll walk you through my experience setting up Ubuntu 24.04 with Hyprland using JaKooLit’s automated script in this guide.</p>
 
@@ -577,8 +577,8 @@ This PC -&gt; Properties -&gt; Advanced System Setting -&gt; Environment Variabl
 </table>
 
 <hr />
-<h3 id="-installing-and-using-anaconda">🐍 Installing and using Anaconda</h3>
-<p><a href="https://anaconda.org/">Anaconda.org</a>
+<h3 id="-installing-and-using-conda">🐍 Installing and using Conda</h3>
+<p><a href="https://anaconda.org/anaconda/conda">Anaconda.org</a>
 <code class="language-plaintext highlighter-rouge">conda --version</code><br />
 <code class="language-plaintext highlighter-rouge">conda create --name env_p311 python=3.11</code> :: Create a <strong>new environment</strong> called env_p311 with Python 3.11<br />
 <code class="language-plaintext highlighter-rouge">activate env_p311</code> :: <strong>Activate</strong> the environment<br />
