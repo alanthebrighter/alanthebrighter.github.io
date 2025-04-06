@@ -39,8 +39,8 @@ This PC -> Properties -> Advanced System Setting -> Environment Variables ->  Ne
 |OLLAMA_MODELS   | path to the folder |
 
 ***
-### 🐍 Installing and using Anaconda
-[Anaconda.org](https://anaconda.org/)
+### 🐍 Installing and using Conda
+[Anaconda.org](https://anaconda.org/anaconda/conda)
 `conda --version`  
 `conda create --name env_p311 python=3.11` :: Create a **new environment** called env_p311 with Python 3.11  
 `activate env_p311` :: **Activate** the environment  
