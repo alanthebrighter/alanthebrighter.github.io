@@ -166,6 +166,29 @@ This way, I can ensure my workflow remains smooth, and applications don’t rand
 
 For now, that's all! I still want to tweak/create many configurations for Hyprland. I'm learning more about how it works, how **Linux** works, and exploring **@JaKooLit**'s Hyprland setup.
 
-![Desktop day 4](https://github.com/user-attachments/assets/03590393-17ee-4d56-ab14-20ddf8ee5ac2)
+![Desktop day 4](https://github.com/user-attachments/assets/03590393-17ee-4d56-ab14-20ddf8ee5ac2)  
+
+## Progress with Hyprland & Linux Customization
+
+Lately, I've been diving even deeper into customizing my Hyprland setup, and I've made some solid progress. I’ve finally learned how to assign specific applications to open in dedicated workspaces, which has been a game changer for organizing my workflow. I also figured out how to move floating pop-up windows — although I haven’t yet discovered how to change their default behavior, that’s still on my to-do list.
+
+I no longer care about setting apps to auto-launch at startup — turns out I don’t really need it. Also, I’ve stopped using Station completely, so that’s off the list too.
+
+One major win: I managed to fix the weird visual glitch that was happening with Google Chrome. On top of that, I discovered how to configure transparency settings per app, giving my desktop a much cleaner and more aesthetic look. I even gave my Waybar a small facelift — now it feels a bit more “me,” although I still have some visual tweaks in mind.
+
+### Goodbye Hyprlock, Hello Swaylock?
+
+Hyprlock kept freezing every time I returned from suspend, which got annoying fast. I tried switching from GDM to SDDM hoping to solve this issue, but in the end, I completely removed Hyprlock after realizing it doesn’t play well with Ubuntu. I’ve since replaced it with Swaylock, though I’m not entirely sure it’s working exactly how I want — I’ll need to test it further.
+
+I also customized `wlogout`, giving it a look that fits better with the rest of my setup. Overall, I feel way more comfortable and confident using Linux now.
+
+### New Direction: Arch Linux Rice
+
+That said… I’m never fully satisfied. After dealing with Ubuntu’s quirks — possibly tied to NVIDIA drivers — I’ve decided to move on. My next step is building my first proper rice on **Arch Linux**, this time using Hyprland from the start. I’m aiming for a minimal, stable, fully personalized system — something that truly feels like home and matches both my aesthetic and functional needs.
+
+I’m also hoping I can work around some of the Windows-native features I still miss. A few of those just don’t exist on Linux, work differently, or require manual setup — and sometimes, they don’t do exactly what I want. But I’m determined to either recreate them or find new, better workflows.
+
+
+![Desktop day 11](https://github.com/user-attachments/assets/bf3bdc09-abfe-4189-b456-8be81809523f)
 
 
