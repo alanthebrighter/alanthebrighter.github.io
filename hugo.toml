@@ -3,6 +3,9 @@ languageCode = 'en-us'
 title = 'alanthebrighter'
 theme = 'hextra'
 
+[permalinks]
+  posts = '/posts/:year/:month/:title/'
+
 [caches]
   [caches.images]
     dir = ':cacheDir/images'
